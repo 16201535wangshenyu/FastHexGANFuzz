@@ -1,0 +1,23 @@
+trac_id : 1948
+proto_id : 1
+data_len : 8
+unit_id : 1
+function_code : 10
+read_address : 71
+write_address : 121
+read_num : 60
+write_num : 0
+bytes : 0
+payload : 92
+The number of the correct number field for 0 is :11377
+The number of the correct number field for 1 is :3208
+The number of the correct number field for 2 is :1928
+The number of the correct number field for 3 is :427
+The number of the correct number field for 4 is :1
+The number of the correct number field for 5 is :183
+The number of the correct number field for 6 is :394
+file_name is:polar.txt
+total frame is:30000
+total valid_frame is:393
+valid rate(total_valid_frame/total_frame) is :0.0131
+no repeat frame num is:17727

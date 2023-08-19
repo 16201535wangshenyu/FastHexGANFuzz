@@ -1,0 +1,27 @@
+trac_id : 1361
+proto_id : 1
+data_len : 49
+unit_id : 1
+function_code : 10
+read_address : 35
+write_address : 72
+read_num : 37
+write_num : 26
+bytes : 3
+payload : 213
+The number of the correct number field for 0 is :6262
+The number of the correct number field for 1 is :2326
+The number of the correct number field for 2 is :338
+The number of the correct number field for 3 is :60
+The number of the correct number field for 4 is :4
+The number of the correct number field for 5 is :114
+The number of the correct number field for 6 is :181
+The number of the correct number field for 7 is :27
+The number of the correct number field for 8 is :146
+The number of the correct number field for 9 is :30
+The number of the correct number field for 10 is :93
+file_name is:aflnet.txt
+total frame is:30000
+total valid_frame is:344
+valid rate(total_valid_frame/total_frame) is :0.011466666666666667
+no repeat frame num is:9655

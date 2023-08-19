@@ -1,0 +1,86 @@
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "train.py", line 363, in <module>
+    tf.app.run()
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/platform/app.py", line 125, in run
+    _sys.exit(main(argv))
+  File "train.py", line 357, in main
+    generate_data()
+  File "train.py", line 296, in generate_data
+    for epoch_model_file in os.listdir(args.outputdir):
+AttributeError: 'list' object has no attribute 'outputdir'
+
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "train.py", line 364, in <module>
+    tf.app.run()
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/platform/app.py", line 125, in run
+    _sys.exit(main(argv))
+  File "train.py", line 358, in main
+    generate_data()
+  File "train.py", line 297, in generate_data
+    for epoch_model_file in os.listdir(args.outputdir):
+AttributeError: 'list' object has no attribute 'outputdir'
+
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "train.py", line 367, in <module>
+    tf.app.run()
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/platform/app.py", line 125, in run
+    _sys.exit(main(argv))
+  File "train.py", line 361, in main
+    generate_data()
+  File "train.py", line 296, in generate_data
+    args = parse_args(args[0], args[1], args[2])
+NameError: name 'parse_args' is not defined
+
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "train.py", line 363, in <module>
+    tf.app.run()
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/platform/app.py", line 125, in run
+    _sys.exit(main(argv))
+  File "train.py", line 357, in main
+    generate_data()
+  File "train.py", line 343, in generate_data
+    load(sess,epoch_model_file_path,config_train.model_name)
+NameError: name 'load' is not defined
+
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "train.py", line 363, in <module>
+    tf.app.run()
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/platform/app.py", line 125, in run
+    _sys.exit(main(argv))
+  File "train.py", line 357, in main
+    generate_data()
+  File "train.py", line 350, in generate_data
+    generate_real_sample(sess, dis_data_loader.i2w, epoch_model_file, config_train.output_dir, generator, config_train.save_generated_num, config_train.batch_size,train_end_time)
+NameError: name 'generate_real_sample' is not defined
+
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "train.py", line 363, in <module>
+    tf.app.run()
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/platform/app.py", line 125, in run
+    _sys.exit(main(argv))
+  File "train.py", line 357, in main
+    generate_data()
+  File "train.py", line 350, in generate_data
+    generate_real_sample(sess, dis_data_loader.i2w, epoch_model_file, config_train.output_dir, generator, config_train.save_generated_num, config_train.batch_size,train_end_time)
+NameError: name 'dis_data_loader' is not defined
+
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "train.py", line 363, in <module>
+    tf.app.run()
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/platform/app.py", line 125, in run
+    _sys.exit(main(argv))
+  File "train.py", line 357, in main
+    generate_data()
+  File "train.py", line 350, in generate_data
+    generate_real_sample(sess, dis_data_loader.i2w, epoch_model_file, config_train.output_dir, generator, config_train.save_generated_num, config_train.batch_size,train_end_time)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/seqgan/utils.py", line 29, in generate_real_sample
+    total_frame_num = total_frame_num + self.batch_size
+NameError: name 'self' is not defined
+

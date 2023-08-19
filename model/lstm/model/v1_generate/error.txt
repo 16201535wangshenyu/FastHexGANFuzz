@@ -1,0 +1,78 @@
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "main.py", line 114, in <module>
+    main()
+  File "main.py", line 105, in main
+    gan.train(data)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/lstm/model/v1/seq_lstm.py", line 256, in train
+    self.save_model(data, epoch_i, 'epoch' + str(epoch_i + 1), step, train_start_time, batch, fig_loss_trains, fig_time)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/lstm/model/v1/seq_lstm.py", line 355, in save_model
+    sources_batch, targets_batch, sources_lengths, targets_lengths = next(real_data)
+StopIteration
+
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1278, in _do_call
+    return fn(*args)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1263, in _run_fn
+    options, feed_dict, fetch_list, target_list, run_metadata)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1350, in _call_tf_sessionrun
+    run_metadata)
+tensorflow.python.framework.errors_impl.FailedPreconditionError: Attempting to use uninitialized value Variable
+	 [[Node: Variable/read = Identity[T=DT_FLOAT, _class=["loc:@decode_1/decoder/while/BasicDecoderStep/cond/embedding_lookup"], _device="/job:localhost/replica:0/task:0/device:GPU:0"](Variable)]]
+	 [[Node: decode_1/decoder/while/Exit_3/_47 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device_incarnation=1, tensor_name="edge_146_decode_1/decoder/while/Exit_3", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"]()]]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 136, in <module>
+    main()
+  File "main.py", line 127, in main
+    gan.generate_data(data,epoch_model_file,train_end_time)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/lstm/model/v1_generate/seq_lstm.py", line 293, in generate_data
+    self.source_sequence_length: sources_lengths
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 877, in run
+    run_metadata_ptr)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1100, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1272, in _do_run
+    run_metadata)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1291, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.FailedPreconditionError: Attempting to use uninitialized value Variable
+	 [[Node: Variable/read = Identity[T=DT_FLOAT, _class=["loc:@decode_1/decoder/while/BasicDecoderStep/cond/embedding_lookup"], _device="/job:localhost/replica:0/task:0/device:GPU:0"](Variable)]]
+	 [[Node: decode_1/decoder/while/Exit_3/_47 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device_incarnation=1, tensor_name="edge_146_decode_1/decoder/while/Exit_3", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"]()]]
+
+Caused by op 'Variable/read', defined at:
+  File "main.py", line 136, in <module>
+    main()
+  File "main.py", line 122, in main
+    gan = Seq_Gan_SEQ(sess, args, w2i, i2w)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/lstm/model/v1_generate/seq_lstm.py", line 46, in __init__
+    self.targets_data)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/lstm/model/v1_generate/seq_lstm.py", line 190, in seq2seq_model
+    training_decoder_output, predicting_decoder_output = self.decoding_layer(encoder_state, decoder_input)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/lstm/model/v1_generate/seq_lstm.py", line 137, in decoding_layer
+    decoder_embeddings = tf.Variable(tf.random_uniform([self.target_vocab_size, self.decoding_embedding_size]))
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/ops/variables.py", line 259, in __init__
+    constraint=constraint)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/ops/variables.py", line 422, in _init_from_args
+    self._snapshot = array_ops.identity(self._variable, name="read")
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/ops/array_ops.py", line 80, in identity
+    return gen_array_ops.identity(input, name=name)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/ops/gen_array_ops.py", line 3264, in identity
+    "Identity", input=input, name=name)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py", line 454, in new_func
+    return func(*args, **kwargs)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 3155, in create_op
+    op_def=op_def)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 1717, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+FailedPreconditionError (see above for traceback): Attempting to use uninitialized value Variable
+	 [[Node: Variable/read = Identity[T=DT_FLOAT, _class=["loc:@decode_1/decoder/while/BasicDecoderStep/cond/embedding_lookup"], _device="/job:localhost/replica:0/task:0/device:GPU:0"](Variable)]]
+	 [[Node: decode_1/decoder/while/Exit_3/_47 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device_incarnation=1, tensor_name="edge_146_decode_1/decoder/while/Exit_3", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"]()]]
+
+

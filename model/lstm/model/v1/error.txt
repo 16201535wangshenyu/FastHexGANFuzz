@@ -1,0 +1,12 @@
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "main.py", line 114, in <module>
+    main()
+  File "main.py", line 105, in main
+    gan.train(data)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/lstm/model/v1/seq_lstm.py", line 256, in train
+    self.save_model(data, epoch_i, 'epoch' + str(epoch_i + 1), step, train_start_time, batch, fig_loss_trains, fig_time)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/lstm/model/v1/seq_lstm.py", line 355, in save_model
+    sources_batch, targets_batch, sources_lengths, targets_lengths = next(real_data)
+StopIteration
+

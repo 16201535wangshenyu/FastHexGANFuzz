@@ -1,0 +1,29 @@
+type : 10
+flags : 12
+len : 25
+proto_name : 1
+proto_level : 1
+connect_flags : 226
+keep_alive : 1422
+client_id : 87
+will_topic : 6
+will_message : 1
+username : 2
+password : 2
+topic_name : 75
+packet_identifier : 2584
+payload : 36
+qos : 2
+The number of the correct number field for 0 is :1617
+The number of the correct number field for 1 is :7126
+The number of the correct number field for 2 is :1448
+The number of the correct number field for 3 is :8311
+The number of the correct number field for 4 is :326
+The number of the correct number field for 5 is :73
+The number of the correct number field for 6 is :19
+The number of the correct number field for 7 is :1
+file_name is:afl++.txt
+total frame is:30000
+total valid_frame is:7
+valid rate(total_valid_frame/total_frame) is :0.00023333333333333333
+no repeat frame num is:24534

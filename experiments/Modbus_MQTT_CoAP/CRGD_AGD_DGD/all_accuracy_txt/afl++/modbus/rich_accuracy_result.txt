@@ -1,0 +1,27 @@
+trac_id : 3787
+proto_id : 1
+data_len : 23
+unit_id : 1
+function_code : 11
+read_address : 73
+write_address : 70
+read_num : 64
+write_num : 17
+bytes : 3
+payload : 268
+The number of the correct number field for 0 is :11342
+The number of the correct number field for 1 is :4466
+The number of the correct number field for 2 is :6581
+The number of the correct number field for 3 is :817
+The number of the correct number field for 4 is :11
+The number of the correct number field for 5 is :29
+The number of the correct number field for 6 is :68
+The number of the correct number field for 7 is :46
+The number of the correct number field for 8 is :59
+The number of the correct number field for 9 is :0
+The number of the correct number field for 10 is :243
+file_name is:afl++.txt
+total frame is:30000
+total valid_frame is:326
+valid rate(total_valid_frame/total_frame) is :0.010866666666666667
+no repeat frame num is:23853

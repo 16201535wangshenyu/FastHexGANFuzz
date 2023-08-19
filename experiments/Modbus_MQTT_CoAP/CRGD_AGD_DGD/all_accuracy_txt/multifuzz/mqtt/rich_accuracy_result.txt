@@ -1,0 +1,30 @@
+type : 10
+flags : 12
+len : 18
+proto_name : 1
+proto_level : 1
+connect_flags : 220
+keep_alive : 1343
+client_id : 2324
+will_topic : 4
+will_message : 1
+username : 1
+password : 2
+topic_name : 297
+packet_identifier : 1706
+payload : 255
+qos : 2
+The number of the correct number field for 0 is :648
+The number of the correct number field for 1 is :7044
+The number of the correct number field for 2 is :1176
+The number of the correct number field for 3 is :6271
+The number of the correct number field for 4 is :889
+The number of the correct number field for 5 is :440
+The number of the correct number field for 6 is :1127
+The number of the correct number field for 7 is :1839
+The number of the correct number field for 8 is :2
+file_name is:multifuzz.txt
+total frame is:30000
+total valid_frame is:2023
+valid rate(total_valid_frame/total_frame) is :0.06743333333333333
+no repeat frame num is:24227

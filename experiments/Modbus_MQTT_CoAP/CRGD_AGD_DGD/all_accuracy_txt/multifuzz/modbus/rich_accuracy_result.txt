@@ -1,0 +1,27 @@
+trac_id : 3590
+proto_id : 1
+data_len : 18
+unit_id : 1
+function_code : 12
+read_address : 104
+write_address : 164
+read_num : 110
+write_num : 28
+bytes : 4
+payload : 696
+The number of the correct number field for 0 is :20521
+The number of the correct number field for 1 is :2964
+The number of the correct number field for 2 is :174
+The number of the correct number field for 3 is :97
+The number of the correct number field for 4 is :4
+The number of the correct number field for 5 is :83
+The number of the correct number field for 6 is :404
+The number of the correct number field for 7 is :121
+The number of the correct number field for 8 is :207
+The number of the correct number field for 9 is :1
+The number of the correct number field for 10 is :450
+file_name is:multifuzz.txt
+total frame is:30000
+total valid_frame is:955
+valid rate(total_valid_frame/total_frame) is :0.03183333333333333
+no repeat frame num is:25137

@@ -1,0 +1,112 @@
+{
+	'afl++': {
+		'coap': {
+			0: 128
+		},
+		'modbus': {
+			0: 30
+		},
+		'mqtt': {
+			0: 41
+		}
+	},
+	'aflnet': {
+		'coap': {
+			0: 98
+		},
+		'modbus': {
+			0: 38
+		},
+		'mqtt': {
+			0: 60
+		}
+	},
+	'blstm_dcgan': {
+		'coap': {
+			2: 140
+		},
+		'modbus': {
+			9: 50
+		},
+		'mqtt': {
+			6: 77
+		}
+	},
+	'Fast_RoPEGAN': {
+		'coap': {
+			9: 16
+		},
+		'modbus': {
+			0: 13
+		},
+		'mqtt': {
+			1: 18
+		}
+	},
+	'Fast_RoPE_without_FastRoPEAttention': {
+		'coap': {
+			9: 39
+		},
+		'modbus': {
+			0: 22
+		},
+		'mqtt': {
+			0: 19
+		}
+	},
+	'lstm': {
+		'coap': {
+			9: 133
+		},
+		'modbus': {
+			5: 64
+		},
+		'mqtt': {
+			3: 90
+		}
+	},
+	'multifuzz': {
+		'coap': {
+			0: 86
+		},
+		'modbus': {
+			0: 20
+		},
+		'mqtt': {
+			0: 43
+		}
+	},
+	'polar': {
+		'coap': {
+			0: 123
+		},
+		'modbus': {
+			0: 44
+		},
+		'mqtt': {
+			0: 71
+		}
+	},
+	'seq_gan': {
+		'coap': {
+			0: 39
+		},
+		'modbus': {
+			1: 36
+		},
+		'mqtt': {
+			6: 51
+		}
+	},
+	'wgan': {
+		'coap': {
+			8: 84
+		},
+		'modbus': {
+			0: 21
+		},
+		'mqtt': {
+			0: 33
+		}
+	}
+}

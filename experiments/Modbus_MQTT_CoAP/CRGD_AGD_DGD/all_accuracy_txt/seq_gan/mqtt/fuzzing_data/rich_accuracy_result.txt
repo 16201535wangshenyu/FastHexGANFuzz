@@ -1,0 +1,327 @@
+type : 9
+flags : 6
+len : 5
+proto_name : 1
+proto_level : 1
+connect_flags : 17
+keep_alive : 24
+client_id : 22
+will_topic : 56
+will_message : 144
+username : 19
+password : 1
+topic_name : 60
+packet_identifier : 578
+payload : 9794
+qos : 3
+The number of the correct number field for 0 is :0
+The number of the correct number field for 1 is :1811
+The number of the correct number field for 2 is :3437
+The number of the correct number field for 3 is :141
+The number of the correct number field for 4 is :4974
+The number of the correct number field for 5 is :5016
+The number of the correct number field for 6 is :4
+The number of the correct number field for 7 is :2842
+The number of the correct number field for 8 is :514
+The number of the correct number field for 9 is :352
+The number of the correct number field for 10 is :46
+file_name is:epoch100_generate_data.txt
+total frame is:30000
+total valid_frame is:9963
+valid rate(total_valid_frame/total_frame) is :0.3321
+no repeat frame num is:19137
+type : 10
+flags : 6
+len : 5
+proto_name : 1
+proto_level : 1
+connect_flags : 14
+keep_alive : 17
+client_id : 21
+will_topic : 20
+will_message : 128
+username : 26
+password : 6
+topic_name : 45
+packet_identifier : 982
+payload : 7967
+qos : 3
+The number of the correct number field for 0 is :0
+The number of the correct number field for 1 is :4487
+The number of the correct number field for 2 is :2776
+The number of the correct number field for 3 is :303
+The number of the correct number field for 4 is :4623
+The number of the correct number field for 5 is :3567
+The number of the correct number field for 6 is :2
+The number of the correct number field for 7 is :65
+The number of the correct number field for 8 is :44
+The number of the correct number field for 9 is :738
+The number of the correct number field for 10 is :121
+The number of the correct number field for 11 is :2
+file_name is:epoch10_generate_data.txt
+total frame is:30000
+total valid_frame is:8170
+valid rate(total_valid_frame/total_frame) is :0.2723333333333333
+no repeat frame num is:16728
+type : 10
+flags : 6
+len : 5
+proto_name : 1
+proto_level : 1
+connect_flags : 13
+keep_alive : 22
+client_id : 22
+will_topic : 48
+will_message : 257
+username : 171
+password : 15
+topic_name : 46
+packet_identifier : 762
+payload : 9227
+qos : 3
+The number of the correct number field for 0 is :1
+The number of the correct number field for 1 is :3088
+The number of the correct number field for 2 is :2770
+The number of the correct number field for 3 is :207
+The number of the correct number field for 4 is :4911
+The number of the correct number field for 5 is :4560
+The number of the correct number field for 6 is :3
+The number of the correct number field for 7 is :1072
+The number of the correct number field for 8 is :880
+The number of the correct number field for 9 is :1544
+The number of the correct number field for 10 is :660
+The number of the correct number field for 11 is :12
+file_name is:epoch20_generate_data.txt
+total frame is:30000
+total valid_frame is:9460
+valid rate(total_valid_frame/total_frame) is :0.31533333333333335
+no repeat frame num is:19708
+type : 10
+flags : 6
+len : 5
+proto_name : 1
+proto_level : 1
+connect_flags : 23
+keep_alive : 30
+client_id : 26
+will_topic : 53
+will_message : 200
+username : 48
+password : 2
+topic_name : 59
+packet_identifier : 316
+payload : 9543
+qos : 3
+The number of the correct number field for 0 is :0
+The number of the correct number field for 1 is :2651
+The number of the correct number field for 2 is :2839
+The number of the correct number field for 3 is :158
+The number of the correct number field for 4 is :4933
+The number of the correct number field for 5 is :4828
+The number of the correct number field for 6 is :5
+The number of the correct number field for 7 is :2128
+The number of the correct number field for 8 is :855
+The number of the correct number field for 9 is :672
+The number of the correct number field for 10 is :129
+The number of the correct number field for 11 is :1
+file_name is:epoch30_generate_data.txt
+total frame is:30000
+total valid_frame is:9726
+valid rate(total_valid_frame/total_frame) is :0.3242
+no repeat frame num is:19199
+type : 10
+flags : 6
+len : 5
+proto_name : 1
+proto_level : 1
+connect_flags : 17
+keep_alive : 22
+client_id : 26
+will_topic : 66
+will_message : 144
+username : 31
+password : 3
+topic_name : 50
+packet_identifier : 467
+payload : 9583
+qos : 3
+The number of the correct number field for 0 is :0
+The number of the correct number field for 1 is :2492
+The number of the correct number field for 2 is :2951
+The number of the correct number field for 3 is :162
+The number of the correct number field for 4 is :4940
+The number of the correct number field for 5 is :4838
+The number of the correct number field for 6 is :2
+The number of the correct number field for 7 is :2516
+The number of the correct number field for 8 is :688
+The number of the correct number field for 9 is :459
+The number of the correct number field for 10 is :71
+The number of the correct number field for 11 is :2
+file_name is:epoch40_generate_data.txt
+total frame is:30000
+total valid_frame is:9758
+valid rate(total_valid_frame/total_frame) is :0.32526666666666665
+no repeat frame num is:19121
+type : 9
+flags : 6
+len : 5
+proto_name : 1
+proto_level : 1
+connect_flags : 15
+keep_alive : 25
+client_id : 20
+will_topic : 63
+will_message : 146
+username : 25
+password : 1
+topic_name : 50
+packet_identifier : 687
+payload : 9642
+qos : 3
+The number of the correct number field for 0 is :0
+The number of the correct number field for 1 is :2413
+The number of the correct number field for 2 is :2969
+The number of the correct number field for 3 is :146
+The number of the correct number field for 4 is :4961
+The number of the correct number field for 5 is :4903
+The number of the correct number field for 6 is :4
+The number of the correct number field for 7 is :2679
+The number of the correct number field for 8 is :634
+The number of the correct number field for 9 is :419
+The number of the correct number field for 10 is :58
+file_name is:epoch50_generate_data.txt
+total frame is:30000
+total valid_frame is:9841
+valid rate(total_valid_frame/total_frame) is :0.32803333333333334
+no repeat frame num is:19187
+type : 10
+flags : 6
+len : 5
+proto_name : 1
+proto_level : 1
+connect_flags : 19
+keep_alive : 29
+client_id : 22
+will_topic : 64
+will_message : 128
+username : 28
+password : 3
+topic_name : 54
+packet_identifier : 856
+payload : 9673
+qos : 3
+The number of the correct number field for 0 is :1
+The number of the correct number field for 1 is :2278
+The number of the correct number field for 2 is :3079
+The number of the correct number field for 3 is :120
+The number of the correct number field for 4 is :4976
+The number of the correct number field for 5 is :4916
+The number of the correct number field for 6 is :5
+The number of the correct number field for 7 is :2831
+The number of the correct number field for 8 is :606
+The number of the correct number field for 9 is :353
+The number of the correct number field for 10 is :54
+The number of the correct number field for 11 is :2
+file_name is:epoch60_generate_data.txt
+total frame is:30000
+total valid_frame is:9871
+valid rate(total_valid_frame/total_frame) is :0.32903333333333334
+no repeat frame num is:19221
+type : 9
+flags : 6
+len : 5
+proto_name : 1
+proto_level : 1
+connect_flags : 20
+keep_alive : 27
+client_id : 27
+will_topic : 73
+will_message : 145
+username : 19
+password : 3
+topic_name : 49
+packet_identifier : 1455
+payload : 9761
+qos : 3
+The number of the correct number field for 0 is :0
+The number of the correct number field for 1 is :2102
+The number of the correct number field for 2 is :3171
+The number of the correct number field for 3 is :134
+The number of the correct number field for 4 is :4974
+The number of the correct number field for 5 is :4991
+The number of the correct number field for 6 is :3
+The number of the correct number field for 7 is :2791
+The number of the correct number field for 8 is :541
+The number of the correct number field for 9 is :387
+The number of the correct number field for 10 is :53
+The number of the correct number field for 11 is :2
+file_name is:epoch70_generate_data.txt
+total frame is:30000
+total valid_frame is:9941
+valid rate(total_valid_frame/total_frame) is :0.33136666666666664
+no repeat frame num is:19149
+type : 10
+flags : 7
+len : 5
+proto_name : 1
+proto_level : 1
+connect_flags : 22
+keep_alive : 28
+client_id : 23
+will_topic : 59
+will_message : 135
+username : 19
+password : 3
+topic_name : 53
+packet_identifier : 1349
+payload : 9758
+qos : 3
+The number of the correct number field for 0 is :0
+The number of the correct number field for 1 is :2076
+The number of the correct number field for 2 is :3193
+The number of the correct number field for 3 is :126
+The number of the correct number field for 4 is :4967
+The number of the correct number field for 5 is :5019
+The number of the correct number field for 6 is :2
+The number of the correct number field for 7 is :2841
+The number of the correct number field for 8 is :575
+The number of the correct number field for 9 is :349
+The number of the correct number field for 10 is :51
+file_name is:epoch80_generate_data.txt
+total frame is:30000
+total valid_frame is:9951
+valid rate(total_valid_frame/total_frame) is :0.3317
+no repeat frame num is:19199
+type : 10
+flags : 6
+len : 5
+proto_name : 1
+proto_level : 1
+connect_flags : 21
+keep_alive : 28
+client_id : 23
+will_topic : 63
+will_message : 135
+username : 23
+password : 3
+topic_name : 59
+packet_identifier : 613
+payload : 9823
+qos : 3
+The number of the correct number field for 0 is :0
+The number of the correct number field for 1 is :1860
+The number of the correct number field for 2 is :3337
+The number of the correct number field for 3 is :127
+The number of the correct number field for 4 is :4951
+The number of the correct number field for 5 is :5047
+The number of the correct number field for 6 is :4
+The number of the correct number field for 7 is :2861
+The number of the correct number field for 8 is :566
+The number of the correct number field for 9 is :333
+The number of the correct number field for 10 is :59
+The number of the correct number field for 11 is :2
+file_name is:epoch90_generate_data.txt
+total frame is:30000
+total valid_frame is:9975
+valid rate(total_valid_frame/total_frame) is :0.3325
+no repeat frame num is:19147

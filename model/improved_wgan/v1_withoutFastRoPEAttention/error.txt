@@ -1,0 +1,183 @@
+#######################################################本次运行报错信息如下：#######################################################
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "main.py", line 128, in <module>
+    main()
+  File "main.py", line 119, in main
+    gan.train(data)
+  File "/home/shenyuwang/paper_fuzzing/workspace/improved_wgan/v1/improved_wgan.py", line 329, in train
+    e + 1, fig_time_t)
+  File "/home/shenyuwang/paper_fuzzing/workspace/improved_wgan/v1/improved_wgan.py", line 397, in draw_result_picture
+    lns1 = ax1.plot(np.arange(total_batch), fig_w_distance, label="w_distance")
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/matplotlib/__init__.py", line 1855, in inner
+    return func(ax, *args, **kwargs)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/matplotlib/axes/_axes.py", line 1527, in plot
+    for line in self._get_lines(*args, **kwargs):
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/matplotlib/axes/_base.py", line 406, in _grab_next_args
+    for seg in self._plot_args(this, kwargs):
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/matplotlib/axes/_base.py", line 383, in _plot_args
+    x, y = self._xy_from_xy(x, y)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/matplotlib/axes/_base.py", line 242, in _xy_from_xy
+    "have shapes {} and {}".format(x.shape, y.shape))
+ValueError: x and y must have same first dimension, but have shapes (180,) and (10,)
+Generator/dense/kernel:0
+Generator/dense/bias:0
+Generator/num_blocks_0/multihead_attention/dense/kernel:0
+Generator/num_blocks_0/multihead_attention/dense/bias:0
+Generator/num_blocks_0/multihead_attention/dense_1/kernel:0
+Generator/num_blocks_0/multihead_attention/dense_1/bias:0
+Generator/num_blocks_0/multihead_attention/dense_2/kernel:0
+Generator/num_blocks_0/multihead_attention/dense_2/bias:0
+Generator/num_blocks_0/multihead_attention/ln/beta:0
+Generator/num_blocks_0/multihead_attention/ln/gamma:0
+Generator/num_blocks_0/positionwise_feedforward/dense/kernel:0
+Generator/num_blocks_0/positionwise_feedforward/dense/bias:0
+Generator/num_blocks_0/positionwise_feedforward/dense_1/kernel:0
+Generator/num_blocks_0/positionwise_feedforward/dense_1/bias:0
+Generator/num_blocks_0/positionwise_feedforward/ln/beta:0
+Generator/num_blocks_0/positionwise_feedforward/ln/gamma:0
+Generator/num_blocks_1/multihead_attention/dense/kernel:0
+Generator/num_blocks_1/multihead_attention/dense/bias:0
+Generator/num_blocks_1/multihead_attention/dense_1/kernel:0
+Generator/num_blocks_1/multihead_attention/dense_1/bias:0
+Generator/num_blocks_1/multihead_attention/dense_2/kernel:0
+Generator/num_blocks_1/multihead_attention/dense_2/bias:0
+Generator/num_blocks_1/multihead_attention/ln/beta:0
+Generator/num_blocks_1/multihead_attention/ln/gamma:0
+Generator/num_blocks_1/positionwise_feedforward/dense/kernel:0
+Generator/num_blocks_1/positionwise_feedforward/dense/bias:0
+Generator/num_blocks_1/positionwise_feedforward/dense_1/kernel:0
+Generator/num_blocks_1/positionwise_feedforward/dense_1/bias:0
+Generator/num_blocks_1/positionwise_feedforward/ln/beta:0
+Generator/num_blocks_1/positionwise_feedforward/ln/gamma:0
+Generator/num_blocks_2/multihead_attention/dense/kernel:0
+Generator/num_blocks_2/multihead_attention/dense/bias:0
+Generator/num_blocks_2/multihead_attention/dense_1/kernel:0
+Generator/num_blocks_2/multihead_attention/dense_1/bias:0
+Generator/num_blocks_2/multihead_attention/dense_2/kernel:0
+Generator/num_blocks_2/multihead_attention/dense_2/bias:0
+Generator/num_blocks_2/multihead_attention/ln/beta:0
+Generator/num_blocks_2/multihead_attention/ln/gamma:0
+Generator/num_blocks_2/positionwise_feedforward/dense/kernel:0
+Generator/num_blocks_2/positionwise_feedforward/dense/bias:0
+Generator/num_blocks_2/positionwise_feedforward/dense_1/kernel:0
+Generator/num_blocks_2/positionwise_feedforward/dense_1/bias:0
+Generator/num_blocks_2/positionwise_feedforward/ln/beta:0
+Generator/num_blocks_2/positionwise_feedforward/ln/gamma:0
+Generator/num_blocks_3/multihead_attention/dense/kernel:0
+Generator/num_blocks_3/multihead_attention/dense/bias:0
+Generator/num_blocks_3/multihead_attention/dense_1/kernel:0
+Generator/num_blocks_3/multihead_attention/dense_1/bias:0
+Generator/num_blocks_3/multihead_attention/dense_2/kernel:0
+Generator/num_blocks_3/multihead_attention/dense_2/bias:0
+Generator/num_blocks_3/multihead_attention/ln/beta:0
+Generator/num_blocks_3/multihead_attention/ln/gamma:0
+Generator/num_blocks_3/positionwise_feedforward/dense/kernel:0
+Generator/num_blocks_3/positionwise_feedforward/dense/bias:0
+Generator/num_blocks_3/positionwise_feedforward/dense_1/kernel:0
+Generator/num_blocks_3/positionwise_feedforward/dense_1/bias:0
+Generator/num_blocks_3/positionwise_feedforward/ln/beta:0
+Generator/num_blocks_3/positionwise_feedforward/ln/gamma:0
+Generator/weights:0
+discriminator/Conv1d.1/Conv1d.1.Filters:0
+discriminator/Conv1d.1/Conv1d.1.Biases:0
+discriminator/Conv1d.2/Conv1d.2.Filters:0
+discriminator/Conv1d.2/Conv1d.2.Biases:0
+discriminator/Conv1d.3/Conv1d.3.Filters:0
+discriminator/Conv1d.3/Conv1d.3.Biases:0
+discriminator/Conv1d.4/Conv1d.4.Filters:0
+discriminator/Conv1d.4/Conv1d.4.Biases:0
+discriminator/Conv1d.5/Conv1d.5.Filters:0
+discriminator/Conv1d.5/Conv1d.5.Biases:0
+discriminator/multihead_attention/dense/kernel:0
+discriminator/multihead_attention/dense/bias:0
+discriminator/multihead_attention/dense_1/kernel:0
+discriminator/multihead_attention/dense_1/bias:0
+discriminator/multihead_attention/dense_2/kernel:0
+discriminator/multihead_attention/dense_2/bias:0
+discriminator/multihead_attention/ln/beta:0
+discriminator/multihead_attention/ln/gamma:0
+discriminator/dense/kernel:0
+discriminator/dense/bias:0
+
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "main.py", line 146, in <module>
+    main()
+  File "main.py", line 127, in main
+    gan = SA_GAN_SEQ(sess, args, w2i, i2w)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/improved_wgan/v1_withoutFastRoPEAttention/improved_wgan.py", line 78, in __init__
+    self.real_logits = self.discriminator(self.real_inputs)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/improved_wgan/v1_withoutFastRoPEAttention/improved_wgan.py", line 227, in discriminator
+    output1 = self.self_attention(output, is_training=is_training, scope="multihead_attention_2")
+TypeError: self_attention() got an unexpected keyword argument 'scope'
+Generator/dense/kernel:0
+Generator/dense/bias:0
+Generator/num_blocks_0/multihead_attention/dense/kernel:0
+Generator/num_blocks_0/multihead_attention/dense/bias:0
+Generator/num_blocks_0/multihead_attention/dense_1/kernel:0
+Generator/num_blocks_0/multihead_attention/dense_1/bias:0
+Generator/num_blocks_0/multihead_attention/dense_2/kernel:0
+Generator/num_blocks_0/multihead_attention/dense_2/bias:0
+Generator/num_blocks_0/multihead_attention/ln/beta:0
+Generator/num_blocks_0/multihead_attention/ln/gamma:0
+Generator/num_blocks_0/positionwise_feedforward/dense/kernel:0
+Generator/num_blocks_0/positionwise_feedforward/dense/bias:0
+Generator/num_blocks_0/positionwise_feedforward/dense_1/kernel:0
+Generator/num_blocks_0/positionwise_feedforward/dense_1/bias:0
+Generator/num_blocks_0/positionwise_feedforward/ln/beta:0
+Generator/num_blocks_0/positionwise_feedforward/ln/gamma:0
+Generator/num_blocks_1/multihead_attention/dense/kernel:0
+Generator/num_blocks_1/multihead_attention/dense/bias:0
+Generator/num_blocks_1/multihead_attention/dense_1/kernel:0
+Generator/num_blocks_1/multihead_attention/dense_1/bias:0
+Generator/num_blocks_1/multihead_attention/dense_2/kernel:0
+Generator/num_blocks_1/multihead_attention/dense_2/bias:0
+Generator/num_blocks_1/multihead_attention/ln/beta:0
+Generator/num_blocks_1/multihead_attention/ln/gamma:0
+Generator/num_blocks_1/positionwise_feedforward/dense/kernel:0
+Generator/num_blocks_1/positionwise_feedforward/dense/bias:0
+Generator/num_blocks_1/positionwise_feedforward/dense_1/kernel:0
+Generator/num_blocks_1/positionwise_feedforward/dense_1/bias:0
+Generator/num_blocks_1/positionwise_feedforward/ln/beta:0
+Generator/num_blocks_1/positionwise_feedforward/ln/gamma:0
+Generator/num_blocks_2/multihead_attention/dense/kernel:0
+Generator/num_blocks_2/multihead_attention/dense/bias:0
+Generator/num_blocks_2/multihead_attention/dense_1/kernel:0
+Generator/num_blocks_2/multihead_attention/dense_1/bias:0
+Generator/num_blocks_2/multihead_attention/dense_2/kernel:0
+Generator/num_blocks_2/multihead_attention/dense_2/bias:0
+Generator/num_blocks_2/multihead_attention/ln/beta:0
+Generator/num_blocks_2/multihead_attention/ln/gamma:0
+Generator/num_blocks_2/positionwise_feedforward/dense/kernel:0
+Generator/num_blocks_2/positionwise_feedforward/dense/bias:0
+Generator/num_blocks_2/positionwise_feedforward/dense_1/kernel:0
+Generator/num_blocks_2/positionwise_feedforward/dense_1/bias:0
+Generator/num_blocks_2/positionwise_feedforward/ln/beta:0
+Generator/num_blocks_2/positionwise_feedforward/ln/gamma:0
+Generator/num_blocks_3/multihead_attention/dense/kernel:0
+Generator/num_blocks_3/multihead_attention/dense/bias:0
+Generator/num_blocks_3/multihead_attention/dense_1/kernel:0
+Generator/num_blocks_3/multihead_attention/dense_1/bias:0
+Generator/num_blocks_3/multihead_attention/dense_2/kernel:0
+Generator/num_blocks_3/multihead_attention/dense_2/bias:0
+Generator/num_blocks_3/multihead_attention/ln/beta:0
+Generator/num_blocks_3/multihead_attention/ln/gamma:0
+Generator/num_blocks_3/positionwise_feedforward/dense/kernel:0
+Generator/num_blocks_3/positionwise_feedforward/dense/bias:0
+Generator/num_blocks_3/positionwise_feedforward/dense_1/kernel:0
+Generator/num_blocks_3/positionwise_feedforward/dense_1/bias:0
+Generator/num_blocks_3/positionwise_feedforward/ln/beta:0
+Generator/num_blocks_3/positionwise_feedforward/ln/gamma:0
+Generator/weights:0
+discriminator/Conv1d.1/Conv1d.1.Filters:0
+discriminator/Conv1d.1/Conv1d.1.Biases:0
+discriminator/Conv1d.2/Conv1d.2.Filters:0
+discriminator/Conv1d.2/Conv1d.2.Biases:0
+discriminator/Conv1d.3/Conv1d.3.Filters:0
+discriminator/Conv1d.3/Conv1d.3.Biases:0
+discriminator/Conv1d.4/Conv1d.4.Filters:0
+discriminator/Conv1d.4/Conv1d.4.Biases:0
+discriminator/Conv1d.5/Conv1d.5.Filters:0
+discriminator/Conv1d.5/Conv1d.5.Biases:0
+

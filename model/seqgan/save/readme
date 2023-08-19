@@ -1,0 +1,28 @@
+eval_file:generator产生的，用来评价Generator和oracle model相性性所产生的数据。测试集
+
+real_data：是由oracle_model产生的real_world数据。
+
+generator_sample:generator产生的数据
+target_params：oracle的参数，我们直接使用里面的参数还原oracle model
+
+configuration： 一些配置参数
+
+dataloader.py：产生训练数据，对于Generator来说，我们只在预训练中使用data_loader 来得到训练数据，
+                对于discriminator来说，在预训练和对抗过程中都要使用data_load来得到训练数据。
+                在eval过程中，进行Generator和Oracle model相似性判定时，也会用到data_loader来产生数据。
+
+discriminator.py：定义了我们的discriminator
+
+generator.py ：定义了我们的generator
+
+rollout.py：计算reward时的采样过程
+
+target_lstm.py：定义了我们的oracle model，这个文件不用管，复制过去就好，哈哈。
+
+train.py : 定义了我们的训练过程，这是我们一会重点讲解的文件
+
+utils.py : 定义了一些在训练过程中的通用过程
+。
+
+
+https://www.jianshu.com/p/de4e913e0580

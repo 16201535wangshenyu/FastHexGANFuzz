@@ -1,0 +1,620 @@
+Len : 23
+TKL : 4
+code : 11
+token : 4017
+option_delta : 41
+option_len : 35
+opt_IF_MATCH_value : 834
+opt_URI_HOST_value : 123
+opt_ETAG_value : 693
+opt_IF_NONE_MATCH_value : 1
+opt_OBSERVE_value : 3
+opt_URI_PORT_value : 1
+opt_URI_PATH_value : 366
+opt_CONTENT_FORMAT_value : 18
+opt_URI_QUERY_value : 169
+opt_HOP_LIMIT_value : 92
+opt_ACCEPT_value : 18
+opt_BLOCK2_value : 59
+opt_BLOCK1_value : 31
+opt_SIZE2_value : 25
+opt_PROXY_URI_value : 10
+opt_PROXY_SCHEME_value : 10
+opt_SIZE1_value : 4
+opt_NORESPONSE_value : 1
+opt_SIGNAL_MAX_MSG_SIZE : 0
+opt_SIGNAL_BLOCKWISE_TRANSFER : 0
+opt_SIGNAL_CUSTODY : 0
+opt_SIGNAL_ALT_ADDR : 176
+opt_SIGNAL_HOLD_OFF : 2850
+opt_SIGNAL_BAD_CSM : 0
+payload : 1
+The number of the correct number field for 0 is :2820
+The number of the correct number field for 1 is :2542
+The number of the correct number field for 2 is :5441
+The number of the correct number field for 3 is :4169
+The number of the correct number field for 4 is :2372
+The number of the correct number field for 5 is :1572
+The number of the correct number field for 6 is :3277
+The number of the correct number field for 7 is :873
+The number of the correct number field for 8 is :1387
+The number of the correct number field for 9 is :671
+The number of the correct number field for 10 is :3720
+The number of the correct number field for 11 is :332
+The number of the correct number field for 12 is :395
+The number of the correct number field for 13 is :120
+The number of the correct number field for 14 is :160
+The number of the correct number field for 15 is :50
+The number of the correct number field for 16 is :45
+The number of the correct number field for 17 is :22
+The number of the correct number field for 18 is :13
+The number of the correct number field for 19 is :5
+The number of the correct number field for 20 is :6
+The number of the correct number field for 21 is :2
+The number of the correct number field for 22 is :4
+The number of the correct number field for 23 is :0
+The number of the correct number field for 24 is :1
+The number of the correct number field for 25 is :0
+The number of the correct number field for 26 is :1
+file_name is:epoch100_generate_data.txt
+total frame is:30000
+total valid_frame is:3000
+valid rate(total_valid_frame/total_frame) is :0.1
+the types of valid frame is:2864
+Len : 29
+TKL : 4
+code : 10
+token : 5405
+option_delta : 48
+option_len : 37
+opt_IF_MATCH_value : 917
+opt_URI_HOST_value : 168
+opt_ETAG_value : 693
+opt_IF_NONE_MATCH_value : 1
+opt_OBSERVE_value : 3
+opt_URI_PORT_value : 1
+opt_URI_PATH_value : 479
+opt_CONTENT_FORMAT_value : 20
+opt_URI_QUERY_value : 192
+opt_HOP_LIMIT_value : 186
+opt_ACCEPT_value : 27
+opt_BLOCK2_value : 140
+opt_BLOCK1_value : 87
+opt_SIZE2_value : 81
+opt_PROXY_URI_value : 13
+opt_PROXY_SCHEME_value : 20
+opt_SIZE1_value : 10
+opt_NORESPONSE_value : 1
+opt_SIGNAL_MAX_MSG_SIZE : 0
+opt_SIGNAL_BLOCKWISE_TRANSFER : 0
+opt_SIGNAL_CUSTODY : 0
+opt_SIGNAL_ALT_ADDR : 391
+opt_SIGNAL_HOLD_OFF : 1178
+opt_SIGNAL_BAD_CSM : 0
+payload : 1
+The number of the correct number field for 0 is :4053
+The number of the correct number field for 1 is :3454
+The number of the correct number field for 2 is :5397
+The number of the correct number field for 3 is :3939
+The number of the correct number field for 4 is :2376
+The number of the correct number field for 5 is :1481
+The number of the correct number field for 6 is :3001
+The number of the correct number field for 7 is :1061
+The number of the correct number field for 8 is :1224
+The number of the correct number field for 9 is :786
+The number of the correct number field for 10 is :1877
+The number of the correct number field for 11 is :409
+The number of the correct number field for 12 is :362
+The number of the correct number field for 13 is :164
+The number of the correct number field for 14 is :113
+The number of the correct number field for 15 is :121
+The number of the correct number field for 16 is :78
+The number of the correct number field for 17 is :37
+The number of the correct number field for 18 is :30
+The number of the correct number field for 19 is :21
+The number of the correct number field for 20 is :9
+The number of the correct number field for 21 is :1
+The number of the correct number field for 22 is :4
+The number of the correct number field for 23 is :1
+The number of the correct number field for 24 is :0
+The number of the correct number field for 25 is :0
+The number of the correct number field for 26 is :0
+The number of the correct number field for 27 is :0
+The number of the correct number field for 28 is :0
+The number of the correct number field for 29 is :0
+The number of the correct number field for 30 is :0
+The number of the correct number field for 31 is :1
+file_name is:epoch10_generate_data.txt
+total frame is:30000
+total valid_frame is:1399
+valid rate(total_valid_frame/total_frame) is :0.04663333333333333
+the types of valid frame is:1239
+Len : 27
+TKL : 4
+code : 12
+token : 4516
+option_delta : 45
+option_len : 37
+opt_IF_MATCH_value : 935
+opt_URI_HOST_value : 199
+opt_ETAG_value : 711
+opt_IF_NONE_MATCH_value : 1
+opt_OBSERVE_value : 3
+opt_URI_PORT_value : 1
+opt_URI_PATH_value : 399
+opt_CONTENT_FORMAT_value : 18
+opt_URI_QUERY_value : 170
+opt_HOP_LIMIT_value : 146
+opt_ACCEPT_value : 25
+opt_BLOCK2_value : 100
+opt_BLOCK1_value : 53
+opt_SIZE2_value : 64
+opt_PROXY_URI_value : 16
+opt_PROXY_SCHEME_value : 13
+opt_SIZE1_value : 10
+opt_NORESPONSE_value : 3
+opt_SIGNAL_MAX_MSG_SIZE : 1
+opt_SIGNAL_BLOCKWISE_TRANSFER : 1
+opt_SIGNAL_CUSTODY : 0
+opt_SIGNAL_ALT_ADDR : 303
+opt_SIGNAL_HOLD_OFF : 1719
+opt_SIGNAL_BAD_CSM : 0
+payload : 3
+The number of the correct number field for 0 is :4628
+The number of the correct number field for 1 is :2833
+The number of the correct number field for 2 is :5236
+The number of the correct number field for 3 is :3467
+The number of the correct number field for 4 is :2224
+The number of the correct number field for 5 is :1405
+The number of the correct number field for 6 is :3122
+The number of the correct number field for 7 is :1120
+The number of the correct number field for 8 is :1385
+The number of the correct number field for 9 is :706
+The number of the correct number field for 10 is :2613
+The number of the correct number field for 11 is :433
+The number of the correct number field for 12 is :355
+The number of the correct number field for 13 is :132
+The number of the correct number field for 14 is :131
+The number of the correct number field for 15 is :78
+The number of the correct number field for 16 is :77
+The number of the correct number field for 17 is :30
+The number of the correct number field for 18 is :14
+The number of the correct number field for 19 is :6
+The number of the correct number field for 20 is :5
+file_name is:epoch20_generate_data.txt
+total frame is:30000
+total valid_frame is:2047
+valid rate(total_valid_frame/total_frame) is :0.06823333333333333
+the types of valid frame is:1760
+Len : 27
+TKL : 4
+code : 12
+token : 4311
+option_delta : 46
+option_len : 37
+opt_IF_MATCH_value : 791
+opt_URI_HOST_value : 276
+opt_ETAG_value : 532
+opt_IF_NONE_MATCH_value : 1
+opt_OBSERVE_value : 3
+opt_URI_PORT_value : 1
+opt_URI_PATH_value : 338
+opt_CONTENT_FORMAT_value : 18
+opt_URI_QUERY_value : 172
+opt_HOP_LIMIT_value : 104
+opt_ACCEPT_value : 18
+opt_BLOCK2_value : 52
+opt_BLOCK1_value : 33
+opt_SIZE2_value : 52
+opt_PROXY_URI_value : 11
+opt_PROXY_SCHEME_value : 14
+opt_SIZE1_value : 9
+opt_NORESPONSE_value : 1
+opt_SIGNAL_MAX_MSG_SIZE : 0
+opt_SIGNAL_BLOCKWISE_TRANSFER : 1
+opt_SIGNAL_CUSTODY : 0
+opt_SIGNAL_ALT_ADDR : 321
+opt_SIGNAL_HOLD_OFF : 2146
+opt_SIGNAL_BAD_CSM : 0
+payload : 4
+The number of the correct number field for 0 is :3756
+The number of the correct number field for 1 is :2727
+The number of the correct number field for 2 is :5584
+The number of the correct number field for 3 is :3639
+The number of the correct number field for 4 is :2550
+The number of the correct number field for 5 is :1504
+The number of the correct number field for 6 is :3261
+The number of the correct number field for 7 is :694
+The number of the correct number field for 8 is :1483
+The number of the correct number field for 9 is :642
+The number of the correct number field for 10 is :3097
+The number of the correct number field for 11 is :326
+The number of the correct number field for 12 is :306
+The number of the correct number field for 13 is :119
+The number of the correct number field for 14 is :140
+The number of the correct number field for 15 is :65
+The number of the correct number field for 16 is :50
+The number of the correct number field for 17 is :22
+The number of the correct number field for 18 is :18
+The number of the correct number field for 19 is :12
+The number of the correct number field for 20 is :2
+The number of the correct number field for 21 is :0
+The number of the correct number field for 22 is :1
+The number of the correct number field for 23 is :0
+The number of the correct number field for 24 is :0
+The number of the correct number field for 25 is :2
+file_name is:epoch30_generate_data.txt
+total frame is:30000
+total valid_frame is:2467
+valid rate(total_valid_frame/total_frame) is :0.08223333333333334
+the types of valid frame is:2152
+Len : 26
+TKL : 4
+code : 11
+token : 4322
+option_delta : 43
+option_len : 33
+opt_IF_MATCH_value : 779
+opt_URI_HOST_value : 288
+opt_ETAG_value : 533
+opt_IF_NONE_MATCH_value : 1
+opt_OBSERVE_value : 3
+opt_URI_PORT_value : 1
+opt_URI_PATH_value : 331
+opt_CONTENT_FORMAT_value : 12
+opt_URI_QUERY_value : 165
+opt_HOP_LIMIT_value : 92
+opt_ACCEPT_value : 14
+opt_BLOCK2_value : 49
+opt_BLOCK1_value : 32
+opt_SIZE2_value : 31
+opt_PROXY_URI_value : 20
+opt_PROXY_SCHEME_value : 7
+opt_SIZE1_value : 5
+opt_NORESPONSE_value : 1
+opt_SIGNAL_MAX_MSG_SIZE : 2
+opt_SIGNAL_BLOCKWISE_TRANSFER : 0
+opt_SIGNAL_CUSTODY : 0
+opt_SIGNAL_ALT_ADDR : 322
+opt_SIGNAL_HOLD_OFF : 2385
+opt_SIGNAL_BAD_CSM : 0
+payload : 3
+The number of the correct number field for 0 is :3809
+The number of the correct number field for 1 is :2674
+The number of the correct number field for 2 is :5604
+The number of the correct number field for 3 is :3531
+The number of the correct number field for 4 is :2617
+The number of the correct number field for 5 is :1507
+The number of the correct number field for 6 is :3163
+The number of the correct number field for 7 is :746
+The number of the correct number field for 8 is :1465
+The number of the correct number field for 9 is :617
+The number of the correct number field for 10 is :3292
+The number of the correct number field for 11 is :323
+The number of the correct number field for 12 is :289
+The number of the correct number field for 13 is :105
+The number of the correct number field for 14 is :122
+The number of the correct number field for 15 is :39
+The number of the correct number field for 16 is :41
+The number of the correct number field for 17 is :20
+The number of the correct number field for 18 is :23
+The number of the correct number field for 19 is :4
+The number of the correct number field for 20 is :7
+The number of the correct number field for 21 is :1
+The number of the correct number field for 22 is :0
+The number of the correct number field for 23 is :1
+file_name is:epoch40_generate_data.txt
+total frame is:30000
+total valid_frame is:2648
+valid rate(total_valid_frame/total_frame) is :0.08826666666666666
+the types of valid frame is:2407
+Len : 24
+TKL : 4
+code : 12
+token : 4467
+option_delta : 45
+option_len : 33
+opt_IF_MATCH_value : 737
+opt_URI_HOST_value : 345
+opt_ETAG_value : 524
+opt_IF_NONE_MATCH_value : 1
+opt_OBSERVE_value : 3
+opt_URI_PORT_value : 1
+opt_URI_PATH_value : 337
+opt_CONTENT_FORMAT_value : 12
+opt_URI_QUERY_value : 197
+opt_HOP_LIMIT_value : 97
+opt_ACCEPT_value : 15
+opt_BLOCK2_value : 46
+opt_BLOCK1_value : 26
+opt_SIZE2_value : 34
+opt_PROXY_URI_value : 9
+opt_PROXY_SCHEME_value : 19
+opt_SIZE1_value : 3
+opt_NORESPONSE_value : 1
+opt_SIGNAL_MAX_MSG_SIZE : 0
+opt_SIGNAL_BLOCKWISE_TRANSFER : 0
+opt_SIGNAL_CUSTODY : 0
+opt_SIGNAL_ALT_ADDR : 285
+opt_SIGNAL_HOLD_OFF : 2509
+opt_SIGNAL_BAD_CSM : 0
+payload : 1
+The number of the correct number field for 0 is :3967
+The number of the correct number field for 1 is :2733
+The number of the correct number field for 2 is :5054
+The number of the correct number field for 3 is :3367
+The number of the correct number field for 4 is :2378
+The number of the correct number field for 5 is :1486
+The number of the correct number field for 6 is :3296
+The number of the correct number field for 7 is :839
+The number of the correct number field for 8 is :1597
+The number of the correct number field for 9 is :675
+The number of the correct number field for 10 is :3473
+The number of the correct number field for 11 is :330
+The number of the correct number field for 12 is :405
+The number of the correct number field for 13 is :144
+The number of the correct number field for 14 is :139
+The number of the correct number field for 15 is :32
+The number of the correct number field for 16 is :48
+The number of the correct number field for 17 is :16
+The number of the correct number field for 18 is :14
+The number of the correct number field for 19 is :2
+The number of the correct number field for 20 is :1
+The number of the correct number field for 21 is :2
+The number of the correct number field for 22 is :1
+The number of the correct number field for 23 is :0
+The number of the correct number field for 24 is :1
+file_name is:epoch50_generate_data.txt
+total frame is:30000
+total valid_frame is:2693
+valid rate(total_valid_frame/total_frame) is :0.08976666666666666
+the types of valid frame is:2507
+Len : 24
+TKL : 4
+code : 12
+token : 4419
+option_delta : 40
+option_len : 31
+opt_IF_MATCH_value : 780
+opt_URI_HOST_value : 357
+opt_ETAG_value : 574
+opt_IF_NONE_MATCH_value : 1
+opt_OBSERVE_value : 3
+opt_URI_PORT_value : 1
+opt_URI_PATH_value : 317
+opt_CONTENT_FORMAT_value : 14
+opt_URI_QUERY_value : 174
+opt_HOP_LIMIT_value : 117
+opt_ACCEPT_value : 15
+opt_BLOCK2_value : 42
+opt_BLOCK1_value : 33
+opt_SIZE2_value : 33
+opt_PROXY_URI_value : 14
+opt_PROXY_SCHEME_value : 15
+opt_SIZE1_value : 4
+opt_NORESPONSE_value : 0
+opt_SIGNAL_MAX_MSG_SIZE : 0
+opt_SIGNAL_BLOCKWISE_TRANSFER : 0
+opt_SIGNAL_CUSTODY : 0
+opt_SIGNAL_ALT_ADDR : 223
+opt_SIGNAL_HOLD_OFF : 2630
+opt_SIGNAL_BAD_CSM : 0
+payload : 1
+The number of the correct number field for 0 is :4107
+The number of the correct number field for 1 is :2644
+The number of the correct number field for 2 is :4973
+The number of the correct number field for 3 is :3282
+The number of the correct number field for 4 is :2455
+The number of the correct number field for 5 is :1529
+The number of the correct number field for 6 is :3454
+The number of the correct number field for 7 is :745
+The number of the correct number field for 8 is :1421
+The number of the correct number field for 9 is :657
+The number of the correct number field for 10 is :3567
+The number of the correct number field for 11 is :322
+The number of the correct number field for 12 is :417
+The number of the correct number field for 13 is :116
+The number of the correct number field for 14 is :144
+The number of the correct number field for 15 is :55
+The number of the correct number field for 16 is :61
+The number of the correct number field for 17 is :18
+The number of the correct number field for 18 is :19
+The number of the correct number field for 19 is :7
+The number of the correct number field for 20 is :4
+The number of the correct number field for 21 is :1
+The number of the correct number field for 22 is :1
+The number of the correct number field for 23 is :0
+The number of the correct number field for 24 is :0
+The number of the correct number field for 25 is :1
+file_name is:epoch60_generate_data.txt
+total frame is:30000
+total valid_frame is:2790
+valid rate(total_valid_frame/total_frame) is :0.093
+the types of valid frame is:2635
+Len : 23
+TKL : 4
+code : 11
+token : 4952
+option_delta : 48
+option_len : 32
+opt_IF_MATCH_value : 919
+opt_URI_HOST_value : 349
+opt_ETAG_value : 610
+opt_IF_NONE_MATCH_value : 1
+opt_OBSERVE_value : 3
+opt_URI_PORT_value : 1
+opt_URI_PATH_value : 419
+opt_CONTENT_FORMAT_value : 14
+opt_URI_QUERY_value : 176
+opt_HOP_LIMIT_value : 106
+opt_ACCEPT_value : 19
+opt_BLOCK2_value : 47
+opt_BLOCK1_value : 27
+opt_SIZE2_value : 43
+opt_PROXY_URI_value : 26
+opt_PROXY_SCHEME_value : 16
+opt_SIZE1_value : 5
+opt_NORESPONSE_value : 2
+opt_SIGNAL_MAX_MSG_SIZE : 0
+opt_SIGNAL_BLOCKWISE_TRANSFER : 0
+opt_SIGNAL_CUSTODY : 0
+opt_SIGNAL_ALT_ADDR : 188
+opt_SIGNAL_HOLD_OFF : 2778
+opt_SIGNAL_BAD_CSM : 0
+payload : 2
+The number of the correct number field for 0 is :3239
+The number of the correct number field for 1 is :2664
+The number of the correct number field for 2 is :5205
+The number of the correct number field for 3 is :3390
+The number of the correct number field for 4 is :2424
+The number of the correct number field for 5 is :1811
+The number of the correct number field for 6 is :3269
+The number of the correct number field for 7 is :975
+The number of the correct number field for 8 is :1493
+The number of the correct number field for 9 is :619
+The number of the correct number field for 10 is :3703
+The number of the correct number field for 11 is :332
+The number of the correct number field for 12 is :422
+The number of the correct number field for 13 is :133
+The number of the correct number field for 14 is :153
+The number of the correct number field for 15 is :56
+The number of the correct number field for 16 is :66
+The number of the correct number field for 17 is :13
+The number of the correct number field for 18 is :18
+The number of the correct number field for 19 is :7
+The number of the correct number field for 20 is :4
+The number of the correct number field for 21 is :0
+The number of the correct number field for 22 is :4
+file_name is:epoch70_generate_data.txt
+total frame is:30000
+total valid_frame is:2935
+valid rate(total_valid_frame/total_frame) is :0.09783333333333333
+the types of valid frame is:2785
+Len : 21
+TKL : 4
+code : 11
+token : 4454
+option_delta : 38
+option_len : 35
+opt_IF_MATCH_value : 862
+opt_URI_HOST_value : 230
+opt_ETAG_value : 677
+opt_IF_NONE_MATCH_value : 1
+opt_OBSERVE_value : 3
+opt_URI_PORT_value : 1
+opt_URI_PATH_value : 392
+opt_CONTENT_FORMAT_value : 16
+opt_URI_QUERY_value : 174
+opt_HOP_LIMIT_value : 98
+opt_ACCEPT_value : 21
+opt_BLOCK2_value : 58
+opt_BLOCK1_value : 26
+opt_SIZE2_value : 21
+opt_PROXY_URI_value : 10
+opt_PROXY_SCHEME_value : 8
+opt_SIZE1_value : 1
+opt_NORESPONSE_value : 1
+opt_SIGNAL_MAX_MSG_SIZE : 0
+opt_SIGNAL_BLOCKWISE_TRANSFER : 0
+opt_SIGNAL_CUSTODY : 0
+opt_SIGNAL_ALT_ADDR : 200
+opt_SIGNAL_HOLD_OFF : 2681
+opt_SIGNAL_BAD_CSM : 0
+payload : 1
+The number of the correct number field for 0 is :2949
+The number of the correct number field for 1 is :2648
+The number of the correct number field for 2 is :5390
+The number of the correct number field for 3 is :3793
+The number of the correct number field for 4 is :2486
+The number of the correct number field for 5 is :1730
+The number of the correct number field for 6 is :3263
+The number of the correct number field for 7 is :911
+The number of the correct number field for 8 is :1413
+The number of the correct number field for 9 is :629
+The number of the correct number field for 10 is :3629
+The number of the correct number field for 11 is :327
+The number of the correct number field for 12 is :446
+The number of the correct number field for 13 is :104
+The number of the correct number field for 14 is :139
+The number of the correct number field for 15 is :58
+The number of the correct number field for 16 is :42
+The number of the correct number field for 17 is :18
+The number of the correct number field for 18 is :17
+The number of the correct number field for 19 is :1
+The number of the correct number field for 20 is :3
+The number of the correct number field for 21 is :1
+The number of the correct number field for 22 is :2
+The number of the correct number field for 23 is :0
+The number of the correct number field for 24 is :0
+The number of the correct number field for 25 is :0
+The number of the correct number field for 26 is :0
+The number of the correct number field for 27 is :0
+The number of the correct number field for 28 is :0
+The number of the correct number field for 29 is :0
+The number of the correct number field for 30 is :1
+file_name is:epoch80_generate_data.txt
+total frame is:30000
+total valid_frame is:2891
+valid rate(total_valid_frame/total_frame) is :0.09636666666666667
+the types of valid frame is:2681
+Len : 24
+TKL : 4
+code : 11
+token : 4162
+option_delta : 39
+option_len : 29
+opt_IF_MATCH_value : 759
+opt_URI_HOST_value : 129
+opt_ETAG_value : 711
+opt_IF_NONE_MATCH_value : 1
+opt_OBSERVE_value : 3
+opt_URI_PORT_value : 1
+opt_URI_PATH_value : 390
+opt_CONTENT_FORMAT_value : 17
+opt_URI_QUERY_value : 153
+opt_HOP_LIMIT_value : 103
+opt_ACCEPT_value : 21
+opt_BLOCK2_value : 68
+opt_BLOCK1_value : 31
+opt_SIZE2_value : 21
+opt_PROXY_URI_value : 11
+opt_PROXY_SCHEME_value : 9
+opt_SIZE1_value : 2
+opt_NORESPONSE_value : 1
+opt_SIGNAL_MAX_MSG_SIZE : 1
+opt_SIGNAL_BLOCKWISE_TRANSFER : 0
+opt_SIGNAL_CUSTODY : 0
+opt_SIGNAL_ALT_ADDR : 166
+opt_SIGNAL_HOLD_OFF : 2749
+opt_SIGNAL_BAD_CSM : 0
+payload : 1
+The number of the correct number field for 0 is :2860
+The number of the correct number field for 1 is :2584
+The number of the correct number field for 2 is :5517
+The number of the correct number field for 3 is :4236
+The number of the correct number field for 4 is :2360
+The number of the correct number field for 5 is :1579
+The number of the correct number field for 6 is :3144
+The number of the correct number field for 7 is :910
+The number of the correct number field for 8 is :1391
+The number of the correct number field for 9 is :611
+The number of the correct number field for 10 is :3700
+The number of the correct number field for 11 is :332
+The number of the correct number field for 12 is :355
+The number of the correct number field for 13 is :117
+The number of the correct number field for 14 is :158
+The number of the correct number field for 15 is :50
+The number of the correct number field for 16 is :46
+The number of the correct number field for 17 is :15
+The number of the correct number field for 18 is :18
+The number of the correct number field for 19 is :8
+The number of the correct number field for 20 is :4
+The number of the correct number field for 21 is :3
+The number of the correct number field for 22 is :1
+The number of the correct number field for 23 is :0
+The number of the correct number field for 24 is :1
+file_name is:epoch90_generate_data.txt
+total frame is:30000
+total valid_frame is:2937
+valid rate(total_valid_frame/total_frame) is :0.0979
+the types of valid frame is:2749

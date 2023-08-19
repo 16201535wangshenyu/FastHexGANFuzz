@@ -1,0 +1,270 @@
+trac_id : 4
+proto_id : 1
+data_len : 3
+unit_id : 1
+function_code : 3
+read_address : 3
+write_address : 1
+read_num : 3
+write_num : 1
+bytes : 1
+payload : 1
+The number of the correct number field for 0 is :0
+The number of the correct number field for 1 is :0
+The number of the correct number field for 2 is :0
+The number of the correct number field for 3 is :0
+The number of the correct number field for 4 is :10000
+The number of the correct number field for 5 is :0
+The number of the correct number field for 6 is :10000
+The number of the correct number field for 7 is :0
+The number of the correct number field for 8 is :0
+The number of the correct number field for 9 is :0
+The number of the correct number field for 10 is :10000
+file_name is:epoch100_generate_data.txt
+total frame is:30000
+total valid_frame is:30000
+valid rate(total_valid_frame/total_frame) is :1.0
+the types of valid frame is:5
+trac_id : 5
+proto_id : 1
+data_len : 3
+unit_id : 1
+function_code : 4
+read_address : 1
+write_address : 3
+read_num : 1
+write_num : 1
+bytes : 1
+payload : 3
+The number of the correct number field for 0 is :0
+The number of the correct number field for 1 is :0
+The number of the correct number field for 2 is :0
+The number of the correct number field for 3 is :0
+The number of the correct number field for 4 is :10000
+The number of the correct number field for 5 is :0
+The number of the correct number field for 6 is :10000
+The number of the correct number field for 7 is :0
+The number of the correct number field for 8 is :0
+The number of the correct number field for 9 is :0
+The number of the correct number field for 10 is :10000
+file_name is:epoch10_generate_data.txt
+total frame is:30000
+total valid_frame is:24252
+valid rate(total_valid_frame/total_frame) is :0.8084
+the types of valid frame is:7
+trac_id : 5
+proto_id : 1
+data_len : 3
+unit_id : 1
+function_code : 3
+read_address : 2
+write_address : 2
+read_num : 2
+write_num : 1
+bytes : 1
+payload : 1
+The number of the correct number field for 0 is :0
+The number of the correct number field for 1 is :0
+The number of the correct number field for 2 is :0
+The number of the correct number field for 3 is :0
+The number of the correct number field for 4 is :10000
+The number of the correct number field for 5 is :0
+The number of the correct number field for 6 is :10000
+The number of the correct number field for 7 is :0
+The number of the correct number field for 8 is :0
+The number of the correct number field for 9 is :0
+The number of the correct number field for 10 is :10000
+file_name is:epoch20_generate_data.txt
+total frame is:30000
+total valid_frame is:30000
+valid rate(total_valid_frame/total_frame) is :1.0
+the types of valid frame is:7
+trac_id : 5
+proto_id : 1
+data_len : 3
+unit_id : 1
+function_code : 5
+read_address : 3
+write_address : 2
+read_num : 2
+write_num : 1
+bytes : 1
+payload : 3
+The number of the correct number field for 0 is :0
+The number of the correct number field for 1 is :0
+The number of the correct number field for 2 is :0
+The number of the correct number field for 3 is :0
+The number of the correct number field for 4 is :10000
+The number of the correct number field for 5 is :0
+The number of the correct number field for 6 is :10000
+The number of the correct number field for 7 is :0
+The number of the correct number field for 8 is :0
+The number of the correct number field for 9 is :0
+The number of the correct number field for 10 is :10000
+file_name is:epoch30_generate_data.txt
+total frame is:30000
+total valid_frame is:30000
+valid rate(total_valid_frame/total_frame) is :1.0
+the types of valid frame is:7
+trac_id : 7
+proto_id : 1
+data_len : 3
+unit_id : 1
+function_code : 4
+read_address : 3
+write_address : 2
+read_num : 2
+write_num : 1
+bytes : 1
+payload : 5
+The number of the correct number field for 0 is :0
+The number of the correct number field for 1 is :0
+The number of the correct number field for 2 is :0
+The number of the correct number field for 3 is :0
+The number of the correct number field for 4 is :10000
+The number of the correct number field for 5 is :0
+The number of the correct number field for 6 is :10000
+The number of the correct number field for 7 is :0
+The number of the correct number field for 8 is :0
+The number of the correct number field for 9 is :0
+The number of the correct number field for 10 is :10000
+file_name is:epoch40_generate_data.txt
+total frame is:30000
+total valid_frame is:30000
+valid rate(total_valid_frame/total_frame) is :1.0
+the types of valid frame is:15
+trac_id : 7
+proto_id : 1
+data_len : 3
+unit_id : 1
+function_code : 4
+read_address : 3
+write_address : 1
+read_num : 3
+write_num : 1
+bytes : 1
+payload : 1
+The number of the correct number field for 0 is :0
+The number of the correct number field for 1 is :0
+The number of the correct number field for 2 is :0
+The number of the correct number field for 3 is :0
+The number of the correct number field for 4 is :10000
+The number of the correct number field for 5 is :0
+The number of the correct number field for 6 is :10000
+The number of the correct number field for 7 is :0
+The number of the correct number field for 8 is :0
+The number of the correct number field for 9 is :0
+The number of the correct number field for 10 is :10000
+file_name is:epoch50_generate_data.txt
+total frame is:30000
+total valid_frame is:30000
+valid rate(total_valid_frame/total_frame) is :1.0
+the types of valid frame is:8
+trac_id : 9
+proto_id : 1
+data_len : 3
+unit_id : 1
+function_code : 5
+read_address : 5
+write_address : 3
+read_num : 4
+write_num : 1
+bytes : 1
+payload : 4
+The number of the correct number field for 0 is :0
+The number of the correct number field for 1 is :0
+The number of the correct number field for 2 is :0
+The number of the correct number field for 3 is :0
+The number of the correct number field for 4 is :10000
+The number of the correct number field for 5 is :0
+The number of the correct number field for 6 is :10000
+The number of the correct number field for 7 is :0
+The number of the correct number field for 8 is :0
+The number of the correct number field for 9 is :0
+The number of the correct number field for 10 is :10000
+file_name is:epoch60_generate_data.txt
+total frame is:30000
+total valid_frame is:30000
+valid rate(total_valid_frame/total_frame) is :1.0
+the types of valid frame is:21
+trac_id : 12
+proto_id : 1
+data_len : 3
+unit_id : 1
+function_code : 4
+read_address : 4
+write_address : 2
+read_num : 3
+write_num : 1
+bytes : 1
+payload : 3
+The number of the correct number field for 0 is :0
+The number of the correct number field for 1 is :0
+The number of the correct number field for 2 is :0
+The number of the correct number field for 3 is :0
+The number of the correct number field for 4 is :10000
+The number of the correct number field for 5 is :0
+The number of the correct number field for 6 is :10000
+The number of the correct number field for 7 is :0
+The number of the correct number field for 8 is :0
+The number of the correct number field for 9 is :0
+The number of the correct number field for 10 is :10000
+file_name is:epoch70_generate_data.txt
+total frame is:30000
+total valid_frame is:30000
+valid rate(total_valid_frame/total_frame) is :1.0
+the types of valid frame is:16
+trac_id : 7
+proto_id : 1
+data_len : 3
+unit_id : 1
+function_code : 3
+read_address : 4
+write_address : 1
+read_num : 4
+write_num : 1
+bytes : 1
+payload : 3
+The number of the correct number field for 0 is :0
+The number of the correct number field for 1 is :0
+The number of the correct number field for 2 is :0
+The number of the correct number field for 3 is :0
+The number of the correct number field for 4 is :10000
+The number of the correct number field for 5 is :0
+The number of the correct number field for 6 is :10000
+The number of the correct number field for 7 is :0
+The number of the correct number field for 8 is :0
+The number of the correct number field for 9 is :0
+The number of the correct number field for 10 is :10000
+file_name is:epoch80_generate_data.txt
+total frame is:30000
+total valid_frame is:30000
+valid rate(total_valid_frame/total_frame) is :1.0
+the types of valid frame is:14
+trac_id : 10
+proto_id : 1
+data_len : 3
+unit_id : 1
+function_code : 5
+read_address : 5
+write_address : 3
+read_num : 5
+write_num : 1
+bytes : 1
+payload : 1
+The number of the correct number field for 0 is :0
+The number of the correct number field for 1 is :0
+The number of the correct number field for 2 is :0
+The number of the correct number field for 3 is :0
+The number of the correct number field for 4 is :10000
+The number of the correct number field for 5 is :0
+The number of the correct number field for 6 is :10000
+The number of the correct number field for 7 is :0
+The number of the correct number field for 8 is :0
+The number of the correct number field for 9 is :0
+The number of the correct number field for 10 is :10000
+file_name is:epoch90_generate_data.txt
+total frame is:30000
+total valid_frame is:30000
+valid rate(total_valid_frame/total_frame) is :1.0
+the types of valid frame is:22

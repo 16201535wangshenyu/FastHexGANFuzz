@@ -1,0 +1,184 @@
+Len : 10
+TKL : 4
+code : 12
+token : 779
+option_delta : 15
+option_len : 16
+opt_IF_MATCH_value : 7
+opt_URI_HOST_value : 1
+opt_ETAG_value : 5
+opt_IF_NONE_MATCH_value : 1
+opt_OBSERVE_value : 1
+opt_URI_PORT_value : 0
+opt_URI_PATH_value : 7
+opt_CONTENT_FORMAT_value : 0
+opt_URI_QUERY_value : 19
+opt_HOP_LIMIT_value : 2
+opt_ACCEPT_value : 1
+opt_BLOCK2_value : 7
+opt_BLOCK1_value : 1
+opt_SIZE2_value : 0
+opt_PROXY_URI_value : 2
+opt_PROXY_SCHEME_value : 0
+opt_SIZE1_value : 0
+opt_NORESPONSE_value : 0
+opt_SIGNAL_MAX_MSG_SIZE : 26
+opt_SIGNAL_BLOCKWISE_TRANSFER : 1
+opt_SIGNAL_CUSTODY : 0
+opt_SIGNAL_ALT_ADDR : 1
+opt_SIGNAL_HOLD_OFF : 0
+opt_SIGNAL_BAD_CSM : 0
+payload : 1
+The number of the correct number field for 0 is :1876
+The number of the correct number field for 1 is :3559
+The number of the correct number field for 2 is :2932
+The number of the correct number field for 3 is :1878
+The number of the correct number field for 4 is :2746
+The number of the correct number field for 5 is :250
+The number of the correct number field for 6 is :76
+The number of the correct number field for 7 is :390
+The number of the correct number field for 8 is :38
+The number of the correct number field for 9 is :34
+The number of the correct number field for 10 is :19
+The number of the correct number field for 11 is :21
+The number of the correct number field for 12 is :17
+The number of the correct number field for 13 is :13
+The number of the correct number field for 14 is :10
+The number of the correct number field for 15 is :7
+The number of the correct number field for 16 is :2
+The number of the correct number field for 17 is :17
+The number of the correct number field for 18 is :5
+The number of the correct number field for 19 is :11
+The number of the correct number field for 20 is :11
+The number of the correct number field for 21 is :4
+The number of the correct number field for 22 is :15
+The number of the correct number field for 23 is :9
+The number of the correct number field for 24 is :0
+The number of the correct number field for 25 is :550
+The number of the correct number field for 26 is :1
+The number of the correct number field for 27 is :1
+The number of the correct number field for 28 is :4
+The number of the correct number field for 29 is :0
+The number of the correct number field for 30 is :0
+The number of the correct number field for 31 is :0
+The number of the correct number field for 32 is :0
+The number of the correct number field for 33 is :0
+The number of the correct number field for 34 is :1
+The number of the correct number field for 35 is :0
+The number of the correct number field for 36 is :1
+The number of the correct number field for 37 is :0
+The number of the correct number field for 38 is :0
+The number of the correct number field for 39 is :0
+The number of the correct number field for 40 is :0
+The number of the correct number field for 41 is :0
+The number of the correct number field for 42 is :0
+The number of the correct number field for 43 is :0
+The number of the correct number field for 44 is :0
+The number of the correct number field for 45 is :0
+The number of the correct number field for 46 is :0
+The number of the correct number field for 47 is :0
+The number of the correct number field for 48 is :0
+The number of the correct number field for 49 is :0
+The number of the correct number field for 50 is :0
+The number of the correct number field for 51 is :0
+The number of the correct number field for 52 is :0
+The number of the correct number field for 53 is :0
+The number of the correct number field for 54 is :0
+The number of the correct number field for 55 is :0
+The number of the correct number field for 56 is :0
+The number of the correct number field for 57 is :0
+The number of the correct number field for 58 is :0
+The number of the correct number field for 59 is :0
+The number of the correct number field for 60 is :0
+The number of the correct number field for 61 is :0
+The number of the correct number field for 62 is :0
+The number of the correct number field for 63 is :0
+The number of the correct number field for 64 is :0
+The number of the correct number field for 65 is :0
+The number of the correct number field for 66 is :0
+The number of the correct number field for 67 is :0
+The number of the correct number field for 68 is :0
+The number of the correct number field for 69 is :0
+The number of the correct number field for 70 is :0
+The number of the correct number field for 71 is :0
+The number of the correct number field for 72 is :0
+The number of the correct number field for 73 is :0
+The number of the correct number field for 74 is :0
+The number of the correct number field for 75 is :0
+The number of the correct number field for 76 is :0
+The number of the correct number field for 77 is :0
+The number of the correct number field for 78 is :0
+The number of the correct number field for 79 is :0
+The number of the correct number field for 80 is :0
+The number of the correct number field for 81 is :0
+The number of the correct number field for 82 is :0
+The number of the correct number field for 83 is :0
+The number of the correct number field for 84 is :0
+The number of the correct number field for 85 is :0
+The number of the correct number field for 86 is :0
+The number of the correct number field for 87 is :0
+The number of the correct number field for 88 is :0
+The number of the correct number field for 89 is :0
+The number of the correct number field for 90 is :0
+The number of the correct number field for 91 is :0
+The number of the correct number field for 92 is :0
+The number of the correct number field for 93 is :0
+The number of the correct number field for 94 is :0
+The number of the correct number field for 95 is :0
+The number of the correct number field for 96 is :0
+The number of the correct number field for 97 is :0
+The number of the correct number field for 98 is :0
+The number of the correct number field for 99 is :0
+The number of the correct number field for 100 is :0
+The number of the correct number field for 101 is :0
+The number of the correct number field for 102 is :0
+The number of the correct number field for 103 is :0
+The number of the correct number field for 104 is :0
+The number of the correct number field for 105 is :0
+The number of the correct number field for 106 is :0
+The number of the correct number field for 107 is :0
+The number of the correct number field for 108 is :0
+The number of the correct number field for 109 is :0
+The number of the correct number field for 110 is :0
+The number of the correct number field for 111 is :0
+The number of the correct number field for 112 is :0
+The number of the correct number field for 113 is :0
+The number of the correct number field for 114 is :0
+The number of the correct number field for 115 is :0
+The number of the correct number field for 116 is :0
+The number of the correct number field for 117 is :0
+The number of the correct number field for 118 is :0
+The number of the correct number field for 119 is :0
+The number of the correct number field for 120 is :0
+The number of the correct number field for 121 is :0
+The number of the correct number field for 122 is :0
+The number of the correct number field for 123 is :0
+The number of the correct number field for 124 is :0
+The number of the correct number field for 125 is :0
+The number of the correct number field for 126 is :0
+The number of the correct number field for 127 is :0
+The number of the correct number field for 128 is :0
+The number of the correct number field for 129 is :0
+The number of the correct number field for 130 is :0
+The number of the correct number field for 131 is :0
+The number of the correct number field for 132 is :0
+The number of the correct number field for 133 is :0
+The number of the correct number field for 134 is :0
+The number of the correct number field for 135 is :0
+The number of the correct number field for 136 is :0
+The number of the correct number field for 137 is :0
+The number of the correct number field for 138 is :0
+The number of the correct number field for 139 is :0
+The number of the correct number field for 140 is :0
+The number of the correct number field for 141 is :0
+The number of the correct number field for 142 is :0
+The number of the correct number field for 143 is :0
+The number of the correct number field for 144 is :0
+The number of the correct number field for 145 is :0
+The number of the correct number field for 146 is :0
+The number of the correct number field for 147 is :1
+file_name is:polar.txt
+total frame is:30000
+total valid_frame is:28
+valid rate(total_valid_frame/total_frame) is :0.0009333333333333333
+no repeat frame num is:14536

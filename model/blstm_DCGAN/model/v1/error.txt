@@ -1,0 +1,535 @@
+
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1278, in _do_call
+    return fn(*args)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1263, in _run_fn
+    options, feed_dict, fetch_list, target_list, run_metadata)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1350, in _call_tf_sessionrun
+    run_metadata)
+tensorflow.python.framework.errors_impl.InternalError: The CPU implementation of FusedBatchNorm only supports NHWC tensor format for now.
+	 [[Node: Generator_3/FusedBatchNorm = FusedBatchNorm[T=DT_FLOAT, data_format="NCHW", epsilon=1.001e-05, is_training=true, _device="/job:localhost/replica:0/task:0/device:CPU:0"](Generator_3/Reshape, Generator/Generator.BN1.scale/read, Generator/Generator.BN1.offset/read, discriminator_1/CNN_layer/Const, discriminator_1/CNN_layer/Const)]]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 188, in <module>
+    main()
+  File "main.py", line 179, in main
+    gan.train(data)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/blstm_DCGAN/model/v1/BLSTM_DCGAN.py", line 512, in train
+    self.z: z})
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 877, in run
+    run_metadata_ptr)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1100, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1272, in _do_run
+    run_metadata)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1291, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.InternalError: The CPU implementation of FusedBatchNorm only supports NHWC tensor format for now.
+	 [[Node: Generator_3/FusedBatchNorm = FusedBatchNorm[T=DT_FLOAT, data_format="NCHW", epsilon=1.001e-05, is_training=true, _device="/job:localhost/replica:0/task:0/device:CPU:0"](Generator_3/Reshape, Generator/Generator.BN1.scale/read, Generator/Generator.BN1.offset/read, discriminator_1/CNN_layer/Const, discriminator_1/CNN_layer/Const)]]
+
+Caused by op 'Generator_3/FusedBatchNorm', defined at:
+  File "main.py", line 188, in <module>
+    main()
+  File "main.py", line 142, in main
+    gan = BLSTM_DCGAN(sess, args, w2i, i2w)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/blstm_DCGAN/model/v1/BLSTM_DCGAN.py", line 107, in __init__
+    self.fake_logits = self.discriminator(self.generator(self.z))
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/blstm_DCGAN/model/v1/BLSTM_DCGAN.py", line 211, in generator
+    output = lib.ops.batchnorm.Batchnorm('Generator.BN1', [0, 2, 3], output, fused=True)
+  File "/home/shenyuwang/paper_fuzzing/workspace/blstm_dcgan_tflib/ops/batchnorm.py", line 53, in Batchnorm
+    outputs, batch_mean, batch_var = _fused_batch_norm_training()
+  File "/home/shenyuwang/paper_fuzzing/workspace/blstm_dcgan_tflib/ops/batchnorm.py", line 31, in _fused_batch_norm_training
+    return tf.nn.fused_batch_norm(inputs, scale, offset, epsilon=1e-5, data_format='NCHW')
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/ops/nn_impl.py", line 909, in fused_batch_norm
+    name=name)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/ops/gen_nn_ops.py", line 3465, in _fused_batch_norm
+    is_training=is_training, name=name)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py", line 454, in new_func
+    return func(*args, **kwargs)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 3155, in create_op
+    op_def=op_def)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 1717, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+InternalError (see above for traceback): The CPU implementation of FusedBatchNorm only supports NHWC tensor format for now.
+	 [[Node: Generator_3/FusedBatchNorm = FusedBatchNorm[T=DT_FLOAT, data_format="NCHW", epsilon=1.001e-05, is_training=true, _device="/job:localhost/replica:0/task:0/device:CPU:0"](Generator_3/Reshape, Generator/Generator.BN1.scale/read, Generator/Generator.BN1.offset/read, discriminator_1/CNN_layer/Const, discriminator_1/CNN_layer/Const)]]
+
+Generator/Generator.Input/Generator.Input.W:0
+Generator/Generator.Input/Generator.Input.b:0
+Generator/Generator.BN1.offset:0
+Generator/Generator.BN1.scale:0
+Generator/Generator.2/Generator.2.Filters:0
+Generator/Generator.2/Generator.2.Biases:0
+Generator/Generator.BN2.offset:0
+Generator/Generator.BN2.scale:0
+Generator/Generator.3/Generator.3.Filters:0
+Generator/Generator.3/Generator.3.Biases:0
+Generator/Generator.BN3.offset:0
+Generator/Generator.BN3.scale:0
+Generator/Generator.4/Generator.4.Filters:0
+Generator/Generator.4/Generator.4.Biases:0
+Generator/Generator.BN4.offset:0
+Generator/Generator.BN4.scale:0
+Generator/Generator.5/Generator.5.Filters:0
+Generator/Generator.5/Generator.5.Biases:0
+Generator/Generator.BN5.offset:0
+Generator/Generator.BN5.scale:0
+Generator/Generator.6/Generator.6.Filters:0
+Generator/Generator.6/Generator.6.Biases:0
+Generator/Generator.7/Generator.7.Filters:0
+Generator/Generator.7/Generator.7.Biases:0
+BLSTM_layer/output_layer/output_layer.dense1/kernel:0
+BLSTM_layer/output_layer/output_layer.dense1/bias:0
+BLSTM_layer/output_layer/output_layer.dense2/kernel:0
+BLSTM_layer/output_layer/output_layer.dense2/bias:0
+BLSTM_layer/EmbedSequence/embeddings:0
+BLSTM_layer/rnn_layer/bidirectional_rnn/fw/lstm_cell/kernel:0
+BLSTM_layer/rnn_layer/bidirectional_rnn/fw/lstm_cell/bias:0
+BLSTM_layer/rnn_layer/bidirectional_rnn/bw/lstm_cell/kernel:0
+BLSTM_layer/rnn_layer/bidirectional_rnn/bw/lstm_cell/bias:0
+discriminator/short_cut.1/short_cut.1.Filters:0
+discriminator/short_cut.1/short_cut.1.Biases:0
+discriminator/short_cut.2/short_cut.2.Filters:0
+discriminator/short_cut.2/short_cut.2.Biases:0
+discriminator/CNN_layer/CNN_layer.1/CNN_layer.1.Filters:0
+discriminator/CNN_layer/CNN_layer.1/CNN_layer.1.Biases:0
+discriminator/CNN_layer/CNN_layer.2/CNN_layer.2.Filters:0
+discriminator/CNN_layer/CNN_layer.2/CNN_layer.2.Biases:0
+discriminator/CNN_layer/CNN_layer.BN2.offset:0
+discriminator/CNN_layer/CNN_layer.BN2.scale:0
+discriminator/CNN_layer/CNN_layer.3/CNN_layer.3.Filters:0
+discriminator/CNN_layer/CNN_layer.3/CNN_layer.3.Biases:0
+discriminator/CNN_layer/CNN_layer.BN3.offset:0
+discriminator/CNN_layer/CNN_layer.BN3.scale:0
+discriminator/CNN_layer/CNN_layer.4/CNN_layer.4.Filters:0
+discriminator/CNN_layer/CNN_layer.4/CNN_layer.4.Biases:0
+discriminator/CNN_layer/CNN_layer.BN4.offset:0
+discriminator/CNN_layer/CNN_layer.BN4.scale:0
+discriminator/CNN_layer/CNN_layer.5/CNN_layer.5.Filters:0
+discriminator/CNN_layer/CNN_layer.5/CNN_layer.5.Biases:0
+discriminator/CNN_layer/CNN_layer.BN5.offset:0
+discriminator/CNN_layer/CNN_layer.BN5.scale:0
+discriminator/CNN_layer/CNN_layer.6/CNN_layer.6.Filters:0
+discriminator/CNN_layer/CNN_layer.6/CNN_layer.6.Biases:0
+discriminator/CNN_layer/CNN_layer.BN6.offset:0
+discriminator/CNN_layer/CNN_layer.BN6.scale:0
+discriminator/CNN_layer/Discriminator.Output/Discriminator.Output.W:0
+discriminator/CNN_layer/Discriminator.Output/Discriminator.Output.b:0
+
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "main.py", line 188, in <module>
+    main()
+  File "main.py", line 142, in main
+    gan = BLSTM_DCGAN(sess, args, w2i, i2w)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/blstm_DCGAN/model/v1/BLSTM_DCGAN.py", line 82, in __init__
+    _, self.fake_inputs = self.BLSTM_Layer(self.generator(self.z),is_training=False,
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/blstm_DCGAN/model/v1/BLSTM_DCGAN.py", line 208, in generator
+    initializer=None)  # 没有使用normal_init
+  File "/home/shenyuwang/paper_fuzzing/workspace/blstm_dcgan_tflib/ops/linear.py", line 150, in Linear
+    result = tf.matmul(inputs, weight)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py", line 1950, in matmul
+    with ops.name_scope(name, "MatMul", [a, b]) as name:
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 5770, in __enter__
+    g = _get_graph_from_inputs(self._values)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 5428, in _get_graph_from_inputs
+    _assert_same_graph(original_graph_element, graph_element)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 5364, in _assert_same_graph
+    original_item))
+ValueError: Tensor("Generator/Generator.Input/Generator.Input.W:0", shape=(200, 8192), dtype=float32_ref) must be from the same graph as Tensor("Placeholder:0", shape=(64, 200), dtype=float32).
+
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "main.py", line 188, in <module>
+    main()
+  File "main.py", line 142, in main
+    gan = BLSTM_DCGAN(sess, args, w2i, i2w)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/blstm_DCGAN/model/v1/BLSTM_DCGAN.py", line 82, in __init__
+    _, self.fake_inputs = self.BLSTM_Layer(self.generator(self.z),is_training=False,
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/blstm_DCGAN/model/v1/BLSTM_DCGAN.py", line 209, in generator
+    output = tf.layers.dense(res, units=4 * 4 * 4 * self.d_model, kernel_initializer=normal_init,name='Generator.Input')
+NameError: name 'res' is not defined
+
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "main.py", line 188, in <module>
+    main()
+  File "main.py", line 142, in main
+    gan = BLSTM_DCGAN(sess, args, w2i, i2w)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/blstm_DCGAN/model/v1/BLSTM_DCGAN.py", line 82, in __init__
+    _, self.fake_inputs = self.BLSTM_Layer(self.generator(self.z),is_training=False,
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/blstm_DCGAN/model/v1/BLSTM_DCGAN.py", line 212, in generator
+    output = lib.ops.batchnorm.Batchnorm('Generator.BN1', [0, 2, 3], output, fused=True)
+  File "/home/shenyuwang/paper_fuzzing/workspace/blstm_dcgan_tflib/ops/batchnorm.py", line 53, in Batchnorm
+    outputs, batch_mean, batch_var = _fused_batch_norm_training()
+  File "/home/shenyuwang/paper_fuzzing/workspace/blstm_dcgan_tflib/ops/batchnorm.py", line 31, in _fused_batch_norm_training
+    return tf.nn.fused_batch_norm(inputs, scale, offset, epsilon=1e-5, data_format='NCHW')
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/ops/nn_impl.py", line 909, in fused_batch_norm
+    name=name)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/ops/gen_nn_ops.py", line 3465, in _fused_batch_norm
+    is_training=is_training, name=name)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 350, in _apply_op_helper
+    g = ops._get_graph_from_inputs(_Flatten(keywords.values()))
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 5428, in _get_graph_from_inputs
+    _assert_same_graph(original_graph_element, graph_element)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 5364, in _assert_same_graph
+    original_item))
+ValueError: Tensor("Generator/Generator.BN1.scale/read:0", shape=(512,), dtype=float32) must be from the same graph as Tensor("Generator/Reshape:0", shape=(64, 512, 4, 4), dtype=float32).
+Generator/Generator.Input/kernel:0
+Generator/Generator.Input/bias:0
+
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "main.py", line 188, in <module>
+    main()
+  File "main.py", line 142, in main
+    gan = BLSTM_DCGAN(sess, args, w2i, i2w)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/blstm_DCGAN/model/v1/BLSTM_DCGAN.py", line 82, in __init__
+    _, self.fake_inputs = self.BLSTM_Layer(self.generator(self.z),is_training=False,
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/blstm_DCGAN/model/v1/BLSTM_DCGAN.py", line 212, in generator
+    output = lib.ops.batchnorm.Batchnorm('Generator.BN1', [0, 2, 3], output, fused=True)
+  File "/home/shenyuwang/paper_fuzzing/workspace/blstm_dcgan_tflib/ops/batchnorm.py", line 53, in Batchnorm
+    outputs, batch_mean, batch_var = _fused_batch_norm_training()
+  File "/home/shenyuwang/paper_fuzzing/workspace/blstm_dcgan_tflib/ops/batchnorm.py", line 31, in _fused_batch_norm_training
+    return tf.nn.fused_batch_norm(inputs, scale, offset, epsilon=1e-5, data_format='NCHW')
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/ops/nn_impl.py", line 909, in fused_batch_norm
+    name=name)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/ops/gen_nn_ops.py", line 3465, in _fused_batch_norm
+    is_training=is_training, name=name)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 350, in _apply_op_helper
+    g = ops._get_graph_from_inputs(_Flatten(keywords.values()))
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 5428, in _get_graph_from_inputs
+    _assert_same_graph(original_graph_element, graph_element)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 5364, in _assert_same_graph
+    original_item))
+ValueError: Tensor("Generator/Generator.BN1.scale/read:0", shape=(512,), dtype=float32) must be from the same graph as Tensor("Generator/Reshape:0", shape=(64, 512, 4, 4), dtype=float32).
+Generator/Generator.Input/kernel:0
+Generator/Generator.Input/bias:0
+
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "main.py", line 189, in <module>
+    main()
+  File "main.py", line 143, in main
+    gan = BLSTM_DCGAN(sess, args, w2i, i2w)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/blstm_DCGAN/model/v1/BLSTM_DCGAN.py", line 82, in __init__
+    _, self.fake_inputs = self.BLSTM_Layer(self.generator(self.z),is_training=False,
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/blstm_DCGAN/model/v1/BLSTM_DCGAN.py", line 214, in generator
+    output = lib.ops.batchnorm.Batchnorm('Generator.BN1', [0, 2, 3], output, fused=True)
+  File "/home/shenyuwang/paper_fuzzing/workspace/blstm_dcgan_tflib/ops/batchnorm.py", line 58, in Batchnorm
+    outputs, batch_mean, batch_var = _fused_batch_norm_training()
+  File "/home/shenyuwang/paper_fuzzing/workspace/blstm_dcgan_tflib/ops/batchnorm.py", line 36, in _fused_batch_norm_training
+    return tf.nn.fused_batch_norm(inputs, scale, offset, epsilon=1e-5, data_format='NCHW')
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/ops/nn_impl.py", line 909, in fused_batch_norm
+    name=name)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/ops/gen_nn_ops.py", line 3465, in _fused_batch_norm
+    is_training=is_training, name=name)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 350, in _apply_op_helper
+    g = ops._get_graph_from_inputs(_Flatten(keywords.values()))
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 5428, in _get_graph_from_inputs
+    _assert_same_graph(original_graph_element, graph_element)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 5364, in _assert_same_graph
+    original_item))
+ValueError: Tensor("Generator/Generator.BN1.scale/read:0", shape=(512,), dtype=float32) must be from the same graph as Tensor("Generator/Reshape:0", shape=(64, 512, 4, 4), dtype=float32).
+Generator/Generator.Input/kernel:0
+Generator/Generator.Input/bias:0
+
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "main.py", line 189, in <module>
+    main()
+  File "main.py", line 143, in main
+    gan = BLSTM_DCGAN(sess, args, w2i, i2w)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/blstm_DCGAN/model/v1/BLSTM_DCGAN.py", line 82, in __init__
+    _, self.fake_inputs = self.BLSTM_Layer(self.generator(self.z),is_training=False,
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/blstm_DCGAN/model/v1/BLSTM_DCGAN.py", line 218, in generator
+    initializer=None) # [512,4,4]->[256,8,8]
+  File "/home/shenyuwang/paper_fuzzing/workspace/blstm_dcgan_tflib/ops/deconv2d.py", line 112, in Deconv2D
+    padding='SAME'
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/ops/nn_ops.py", line 1219, in conv2d_transpose
+    [value, filter, output_shape]) as name:
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 5770, in __enter__
+    g = _get_graph_from_inputs(self._values)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 5428, in _get_graph_from_inputs
+    _assert_same_graph(original_graph_element, graph_element)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 5364, in _assert_same_graph
+    original_item))
+ValueError: Tensor("Generator/Generator.2/Generator.2.Filters:0", shape=(5, 5, 512, 512), dtype=float32_ref) must be from the same graph as Tensor("Generator/Generator.2/NCHW_to_NHWC:0", shape=(64, 4, 4, 512), dtype=float32).
+Generator/Generator.Input/kernel:0
+Generator/Generator.Input/bias:0
+Generator/Generator.BN1.offset:0
+Generator/Generator.BN1.scale:0
+
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "main.py", line 189, in <module>
+    main()
+  File "main.py", line 143, in main
+    gan = BLSTM_DCGAN(sess, args, w2i, i2w)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/blstm_DCGAN/model/v1/BLSTM_DCGAN.py", line 106, in __init__
+    self.real_logits = self.discriminator(self.BLSTM_Layer(self.real_inputs,is_training=False)[0])
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/blstm_DCGAN/model/v1/BLSTM_DCGAN.py", line 310, in discriminator
+    initializer=None)
+  File "/home/shenyuwang/paper_fuzzing/workspace/blstm_dcgan_tflib/ops/conv2d.py", line 139, in Conv2D
+    result = tf.nn.bias_add(result, _biases, data_format='NCHW')
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/ops/nn_ops.py", line 1502, in bias_add
+    with ops.name_scope(name, "BiasAdd", [value, bias]) as name:
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 5770, in __enter__
+    g = _get_graph_from_inputs(self._values)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 5428, in _get_graph_from_inputs
+    _assert_same_graph(original_graph_element, graph_element)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 5364, in _assert_same_graph
+    original_item))
+ValueError: Tensor("discriminator/short_cut.1/short_cut.1.Biases_1:0", shape=(1,), dtype=float32_ref) must be from the same graph as Tensor("discriminator/short_cut.1/Conv2D:0", shape=(64, 1, 128, 128), dtype=float32).
+Generator/Generator.Input/kernel:0
+Generator/Generator.Input/bias:0
+Generator/Generator.BN1.offset:0
+Generator/Generator.BN1.scale:0
+Generator/Generator.2/Generator.2.Filters:0
+Generator/Generator.2/Generator.2.Biases:0
+Generator/Generator.BN2.offset:0
+Generator/Generator.BN2.scale:0
+Generator/Generator.3/Generator.3.Filters:0
+Generator/Generator.3/Generator.3.Biases:0
+Generator/Generator.BN3.offset:0
+Generator/Generator.BN3.scale:0
+Generator/Generator.4/Generator.4.Filters:0
+Generator/Generator.4/Generator.4.Biases:0
+Generator/Generator.BN4.offset:0
+Generator/Generator.BN4.scale:0
+Generator/Generator.5/Generator.5.Filters:0
+Generator/Generator.5/Generator.5.Biases:0
+Generator/Generator.BN5.offset:0
+Generator/Generator.BN5.scale:0
+Generator/Generator.6/Generator.6.Filters:0
+Generator/Generator.6/Generator.6.Biases:0
+Generator/Generator.7/Generator.7.Filters:0
+Generator/Generator.7/Generator.7.Biases:0
+BLSTM_layer/output_layer/output_layer.dense1/kernel:0
+BLSTM_layer/output_layer/output_layer.dense1/bias:0
+BLSTM_layer/output_layer/output_layer.dense2/kernel:0
+BLSTM_layer/output_layer/output_layer.dense2/bias:0
+Generator_1/Generator.BN1.offset:0
+Generator_1/Generator.BN1.scale:0
+Generator_1/Generator.2/Generator.2.Filters:0
+Generator_1/Generator.2/Generator.2.Biases:0
+Generator_1/Generator.BN2.offset:0
+Generator_1/Generator.BN2.scale:0
+Generator_1/Generator.3/Generator.3.Filters:0
+Generator_1/Generator.3/Generator.3.Biases:0
+Generator_1/Generator.BN3.offset:0
+Generator_1/Generator.BN3.scale:0
+Generator_1/Generator.4/Generator.4.Filters:0
+Generator_1/Generator.4/Generator.4.Biases:0
+Generator_1/Generator.BN4.offset:0
+Generator_1/Generator.BN4.scale:0
+Generator_1/Generator.5/Generator.5.Filters:0
+Generator_1/Generator.5/Generator.5.Biases:0
+Generator_1/Generator.BN5.offset:0
+Generator_1/Generator.BN5.scale:0
+Generator_1/Generator.6/Generator.6.Filters:0
+Generator_1/Generator.6/Generator.6.Biases:0
+Generator_1/Generator.7/Generator.7.Filters:0
+Generator_1/Generator.7/Generator.7.Biases:0
+BLSTM_layer/EmbedSequence/embeddings:0
+BLSTM_layer/rnn_layer/bidirectional_rnn/fw/lstm_cell/kernel:0
+BLSTM_layer/rnn_layer/bidirectional_rnn/fw/lstm_cell/bias:0
+BLSTM_layer/rnn_layer/bidirectional_rnn/bw/lstm_cell/kernel:0
+BLSTM_layer/rnn_layer/bidirectional_rnn/bw/lstm_cell/bias:0
+Generator_2/Generator.BN1.offset:0
+Generator_2/Generator.BN1.scale:0
+Generator_2/Generator.2/Generator.2.Filters:0
+Generator_2/Generator.2/Generator.2.Biases:0
+Generator_2/Generator.BN2.offset:0
+Generator_2/Generator.BN2.scale:0
+Generator_2/Generator.3/Generator.3.Filters:0
+Generator_2/Generator.3/Generator.3.Biases:0
+Generator_2/Generator.BN3.offset:0
+Generator_2/Generator.BN3.scale:0
+Generator_2/Generator.4/Generator.4.Filters:0
+Generator_2/Generator.4/Generator.4.Biases:0
+Generator_2/Generator.BN4.offset:0
+Generator_2/Generator.BN4.scale:0
+Generator_2/Generator.5/Generator.5.Filters:0
+Generator_2/Generator.5/Generator.5.Biases:0
+Generator_2/Generator.BN5.offset:0
+Generator_2/Generator.BN5.scale:0
+Generator_2/Generator.6/Generator.6.Filters:0
+Generator_2/Generator.6/Generator.6.Biases:0
+Generator_2/Generator.7/Generator.7.Filters:0
+Generator_2/Generator.7/Generator.7.Biases:0
+discriminator/short_cut.1/short_cut.1.Filters:0
+discriminator/short_cut.1/short_cut.1.Biases:0
+
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "main.py", line 193, in <module>
+    main()
+  File "main.py", line 143, in main
+    gan = BLSTM_DCGAN(sess, args, w2i, i2w)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/blstm_DCGAN/model/v1/BLSTM_DCGAN.py", line 106, in __init__
+    self.real_logits = self.discriminator(self.BLSTM_Layer(self.real_inputs,is_training=False)[0])
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/blstm_DCGAN/model/v1/BLSTM_DCGAN.py", line 310, in discriminator
+    initializer=None)
+  File "/home/shenyuwang/paper_fuzzing/workspace/blstm_dcgan_tflib/ops/conv2d.py", line 88, in Conv2D
+    filters = tf.get_variable(name = name+'.Filters', dtype='float32',initializer=tf.constant_initializer(filter_values))
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/ops/variable_scope.py", line 1467, in get_variable
+    aggregation=aggregation)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/ops/variable_scope.py", line 1217, in get_variable
+    aggregation=aggregation)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/ops/variable_scope.py", line 527, in get_variable
+    aggregation=aggregation)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/ops/variable_scope.py", line 481, in _true_getter
+    aggregation=aggregation)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/ops/variable_scope.py", line 869, in _get_single_variable
+    "but instead was %s." % (name, shape))
+ValueError: Shape of a new variable (discriminator/short_cut.1.Filters) must be fully defined, but instead was <unknown>.
+Generator/Generator.Input/kernel:0
+Generator/Generator.Input/bias:0
+Generator/Generator.BN1.offset:0
+Generator/Generator.BN1.scale:0
+Generator/Generator.2/Generator.2.Filters:0
+Generator/Generator.2.Biases:0
+Generator/Generator.BN2.offset:0
+Generator/Generator.BN2.scale:0
+Generator/Generator.3/Generator.3.Filters:0
+Generator/Generator.3.Biases:0
+Generator/Generator.BN3.offset:0
+Generator/Generator.BN3.scale:0
+Generator/Generator.4/Generator.4.Filters:0
+Generator/Generator.4.Biases:0
+Generator/Generator.BN4.offset:0
+Generator/Generator.BN4.scale:0
+Generator/Generator.5/Generator.5.Filters:0
+Generator/Generator.5.Biases:0
+Generator/Generator.BN5.offset:0
+Generator/Generator.BN5.scale:0
+Generator/Generator.6/Generator.6.Filters:0
+Generator/Generator.6.Biases:0
+Generator/Generator.7/Generator.7.Filters:0
+Generator/Generator.7.Biases:0
+BLSTM_layer/output_layer/output_layer.dense1/kernel:0
+BLSTM_layer/output_layer/output_layer.dense1/bias:0
+BLSTM_layer/output_layer/output_layer.dense2/kernel:0
+BLSTM_layer/output_layer/output_layer.dense2/bias:0
+Generator_1/Generator.2/Generator.2.Filters:0
+Generator_1/Generator.3/Generator.3.Filters:0
+Generator_1/Generator.4/Generator.4.Filters:0
+Generator_1/Generator.5/Generator.5.Filters:0
+Generator_1/Generator.6/Generator.6.Filters:0
+Generator_1/Generator.7/Generator.7.Filters:0
+BLSTM_layer/EmbedSequence/embeddings:0
+BLSTM_layer/rnn_layer/bidirectional_rnn/fw/lstm_cell/kernel:0
+BLSTM_layer/rnn_layer/bidirectional_rnn/fw/lstm_cell/bias:0
+BLSTM_layer/rnn_layer/bidirectional_rnn/bw/lstm_cell/kernel:0
+BLSTM_layer/rnn_layer/bidirectional_rnn/bw/lstm_cell/bias:0
+Generator_2/Generator.2/Generator.2.Filters:0
+Generator_2/Generator.3/Generator.3.Filters:0
+Generator_2/Generator.4/Generator.4.Filters:0
+Generator_2/Generator.5/Generator.5.Filters:0
+Generator_2/Generator.6/Generator.6.Filters:0
+Generator_2/Generator.7/Generator.7.Filters:0
+
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "main.py", line 193, in <module>
+    main()
+  File "main.py", line 143, in main
+    gan = BLSTM_DCGAN(sess, args, w2i, i2w)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/blstm_DCGAN/model/v1/BLSTM_DCGAN.py", line 82, in __init__
+    _, self.fake_inputs = self.BLSTM_Layer(self.generator(self.z),is_training=False,
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/blstm_DCGAN/model/v1/BLSTM_DCGAN.py", line 218, in generator
+    initializer=None) # [512,4,4]->[256,8,8]
+  File "/home/shenyuwang/paper_fuzzing/workspace/blstm_dcgan_tflib/ops/deconv2d.py", line 115, in Deconv2D
+    padding='SAME'
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/ops/nn_ops.py", line 1219, in conv2d_transpose
+    [value, filter, output_shape]) as name:
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 5770, in __enter__
+    g = _get_graph_from_inputs(self._values)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 5428, in _get_graph_from_inputs
+    _assert_same_graph(original_graph_element, graph_element)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 5364, in _assert_same_graph
+    original_item))
+ValueError: Tensor("Generator/Generator.2/Generator.2.Filters:0", shape=(5, 5, 512, 512), dtype=float32_ref) must be from the same graph as Tensor("Generator/Generator.2/NCHW_to_NHWC:0", shape=(64, 4, 4, 512), dtype=float32).
+Generator/Generator.Input/kernel:0
+Generator/Generator.Input/bias:0
+Generator/Generator.BN1.offset:0
+Generator/Generator.BN1.scale:0
+
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "main.py", line 193, in <module>
+    main()
+  File "main.py", line 143, in main
+    gan = BLSTM_DCGAN(sess, args, w2i, i2w)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/blstm_DCGAN/model/v1/BLSTM_DCGAN.py", line 83, in __init__
+    _, self.fake_inputs = self.BLSTM_Layer(self.generator(self.z),is_training=False,
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/blstm_DCGAN/model/v1/BLSTM_DCGAN.py", line 219, in generator
+    initializer=None) # [512,4,4]->[256,8,8]
+  File "/home/shenyuwang/paper_fuzzing/workspace/blstm_dcgan_tflib/ops/deconv2d.py", line 115, in Deconv2D
+    padding='SAME'
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/ops/nn_ops.py", line 1219, in conv2d_transpose
+    [value, filter, output_shape]) as name:
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 5770, in __enter__
+    g = _get_graph_from_inputs(self._values)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 5428, in _get_graph_from_inputs
+    _assert_same_graph(original_graph_element, graph_element)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 5364, in _assert_same_graph
+    original_item))
+ValueError: Tensor("Generator/Generator.2/Generator.2.Filters:0", shape=(5, 5, 512, 512), dtype=float32_ref) must be from the same graph as Tensor("Generator/Generator.2/NCHW_to_NHWC:0", shape=(64, 4, 4, 512), dtype=float32).
+Generator/Generator.Input/kernel:0
+Generator/Generator.Input/bias:0
+Generator/Generator.BN1.offset:0
+Generator/Generator.BN1.scale:0
+
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "main.py", line 194, in <module>
+    main()
+  File "main.py", line 143, in main
+    gan = BLSTM_DCGAN(sess, args, w2i, i2w)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/blstm_DCGAN/model/v1/BLSTM_DCGAN.py", line 83, in __init__
+    _, self.fake_inputs = self.BLSTM_Layer(self.generator(self.z),is_training=False,
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/blstm_DCGAN/model/v1/BLSTM_DCGAN.py", line 219, in generator
+    initializer=None) # [512,4,4]->[256,8,8]
+  File "/home/shenyuwang/paper_fuzzing/workspace/blstm_dcgan_tflib/ops/deconv2d.py", line 74, in Deconv2D
+    (filter_size, filter_size, output_dim, input_dim)
+  File "/home/shenyuwang/paper_fuzzing/workspace/blstm_dcgan_tflib/ops/deconv2d.py", line 51, in uniform
+    minval=-stdev * tf.sqrt(3),
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py", line 365, in sqrt
+    return gen_math_ops.sqrt(x, name=name)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/ops/gen_math_ops.py", line 7951, in sqrt
+    "Sqrt", x=x, name=name)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 609, in _apply_op_helper
+    param_name=input_name)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 60, in _SatisfiesTypeConstraint
+    ", ".join(dtypes.as_dtype(x).name for x in allowed_list)))
+TypeError: Value passed to parameter 'x' has DataType int32 not in list of allowed values: bfloat16, float16, float32, float64, complex64, complex128
+Generator/Generator.Input/kernel:0
+Generator/Generator.Input/bias:0
+Generator/Generator.BN1.offset:0
+Generator/Generator.BN1.scale:0
+
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "main.py", line 194, in <module>
+    main()
+  File "main.py", line 143, in main
+    gan = BLSTM_DCGAN(sess, args, w2i, i2w)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/blstm_DCGAN/model/v1/BLSTM_DCGAN.py", line 83, in __init__
+    _, self.fake_inputs = self.BLSTM_Layer(self.generator(self.z),is_training=False,
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/blstm_DCGAN/model/v1/BLSTM_DCGAN.py", line 219, in generator
+    initializer=None) # [512,4,4]->[256,8,8]
+  File "/home/shenyuwang/paper_fuzzing/workspace/blstm_dcgan_tflib/ops/deconv2d.py", line 82, in Deconv2D
+    filter_values *= gain
+TypeError: unsupported operand type(s) for *=: 'RandomUniform' and 'float'
+Generator/Generator.Input/kernel:0
+Generator/Generator.Input/bias:0
+Generator/Generator.BN1.offset:0
+Generator/Generator.BN1.scale:0
+

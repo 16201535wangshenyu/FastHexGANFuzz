@@ -1,0 +1,5 @@
+# 1、本次改进 将wgan 改为 improved wgan
+# 2、将优化器更改为adam
+# 3、修改，每10 epcho就记录一次model
+# 4、修改所有的初始化参数均改为：xavier_init he_init
+# 5、相对于test20230120_10_45_21_coap_208_210_212_214_6.0w来说，只是将epcho提高为580

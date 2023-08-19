@@ -1,0 +1,118 @@
+###########################本次为BLSTM_DCGAN的最初版本############################
+1、该版本的特点是，生成器的损失一直很大，没有办法降低
+# 该版本，pretrain画出的图有问题，生成器的损失与BLSTM的损失都使用的BLSTM的损失
+################################版本二###########################################
+1、预训练的过程仅仅预训练BLSTM的部分，其他的部分不进行预训练
+2、打印self.disc_cost 而不是 self.disc_cost += self.LAMBDA * self.gradient_penalty
+参考：Semi­supervised sequence learning[C]
+
+# 该版本，仍然是鉴别器很强，生成器很弱
+
+#############################版本三##############################################
+1、 感觉原文中说所有的w weight均来自于stdev=0.02，是指github上面的如下代码：，因此将所有的weightinit改为None，遵从其原本的设置
+        lib.ops.conv2d.set_weights_stdev(0.02)
+        lib.ops.deconv2d.set_weights_stdev(0.02)
+        lib.ops.linear.set_weights_stdev(0.02)
+2、原文中的学习率使用的是1e-4，所有此版本从github上面2e-4改为1e-4
+
+Epoch 5
+iter 300
+disc cost 7.829339301679283e-05, real prob 1.0
+gen cost 14.369169235229492, gen prob 7.82813731348142e-05
+blstm_cost 1.7189640998840332
+w-distance 238.0118865966797
+time0:05:29.075618
+仍然失败了，鉴别器仍然太强。
+
+#############################版本四#################################################
+1、通过http://t.csdn.cn/rH0Qv 可知，确实预训练鉴别器这一套。所以预训练鉴别器
+2、http://t.csdn.cn/rH0Qv 给出的意见是，为了防止鉴别器的损失调到0，可以更新两次生成器。 【未做】 先看一下其余的更新的效果
+3、对于BLSTM网络与DCGAN网络当做两个网络进行训练，先将BLSTM网络训练好 【训练25epoch，根据之前的训练结果定下的】(确定是正确的)
+4、z-dim = 200 而不是50 现在更改过来 
+5、正式训练的时候，BLSTM不进行训练
+结果：仍然是鉴别器太强。
+
+disc cost 7.670425438473932e-14, real prob 1.0
+gen cost 32.52747344970703, gen prob 2.1487419997598053e-14
+blstm_cost 1.5256049633026123
+w-distance 63.18626403808594
+time0:01:33.356737
+
+
+#############################版本五##############################################
+2、http://t.csdn.cn/rH0Qv 给出的意见是，为了防止鉴别器的损失调到0，可以更新两次生成器。
+结果：仍然是鉴别器太强
+
+
+#############################版本六##############################################
+  感觉是否为数据的问题，采用变化更剧烈的数据，
+  /home/shenyuwang/paper_fuzzing/workspace/data/from_30w_data/coap_208_210_212_214_6.0w.txt
+  drop_rate=0.2 之前写错了
+540236fe1313132911393132373e3e3e2e302e31111111101216131b6e6c6c6c6c6c6c6e6e6e6e64646f61616111111111616161434313131d7d7d68636f6f6f6f3f3f3f3f3e3e3e3e3e3e3e3e3536333333636363606068d8d1d9d9b9ffffffffffffffafd1d9b9uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
+540236fe1313132911393132373e3e3e2e302e31111111101216131b6e6c6c6c6c6c6c6e6e6e6e64646f61616111111111616161434313131d7d7d68636f6f6f6f3f3f3f3f3e3e3e3e3e3e3e3e3536333333636363606068d8d1d9d9b9ffffffffffffffafd1d9b9uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
+540236fe1313132911393132373e3e3e2e302e31111111101216131b6e6c6c6c6c6c6c6e6e6e6e64646f61616111111111616161434313131d7d7d68636f6f6f6f3f3f3f3f3e3e3e3e3e3e3e3e3536333333636363606068d8d1d9d9b9ffffffffffffffafd1d9b9uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
+Epoch 36
+iter 100
+disc cost 3.537427512370628e-13, real prob 1.0
+gen cost 31.939720153808594, gen prob 2.2176401679092385e-14
+blstm_cost 1.6750025749206543
+w-distance 60.69316864013672
+time0:02:04.549717
+仍然是鉴别器太强，调一下LAMBDA惩罚项使其变大一些
+
+################################版本七################################
+1、数据集更改过来，还是/home/shenyuwang/paper_fuzzing/workspace/data/coap_208_210_212_214_6.0w.txt
+2、调整唯一没有在原文中确定下来的惩罚项LAMBDA=2
+
+##################################版本8##################################
+
+1、调整LAMBDA=10
+
+#################################版本9###################################
+1、调整LAMBDA=0.01
+2、对鉴别器不进行预训练
+
+##################################版本10##################################
+1、调整LAMBDA=0.0001 (模型没有保存)
+2、对鉴别器不进行预训练
+同样是鉴别器很强，生成的报文都是：4b6000000006ff06016u000uu 
+###################################版本11#################################
+1、调整LAMBDA=0 (模型没有保存)
+2、对鉴别器不进行预训练
+同样是鉴别器很强，生成的报文都是：4b6000000006ff06016u000uu 
+####################################版本12################################
+1、调整LAMBDA=0
+2、batch_size:128
+2、对鉴别器不进行预训练
+同样是鉴别器很强，生成的报文都是：4b6000000006ff06016u000uu
+
+#######################################版本13############################
+1、调整z_dim=512  （未保存）
+同样是鉴别器很强，生成的报文都是：4b6000000006ff06016u000uu
+
+################################版本七基础上更改################################
+1、数据集更改过来，是/home/shenyuwang/paper_fuzzing/workspace/data/modbus/modbus_raw_data_46_6w.txt
+2、调整唯一没有在原文中确定下来的惩罚项LAMBDA=10
+3、修改为wgan-gp
+
+############################################################################
+1、对BLSTM的output layer，进行更改， batch_size = 128
+output = tf.layers.dense(blstm_output,self.vocab_size, kernel_initializer=normal_init,trainable=is_training) # 直接对最后一维进行线性的desen，但是发现效果不好
+
+fef367f67ucff7ff3fffff76uf6f00666133ffaf6661601ufffb60f3fffff666ff0660660fff6fffc6eaffff600f606f6ff6u6f6fufff0666ffffuffuff8ufuu600010uuuf6011uuue06uuu6e8f266uu7u66c010f06f6f6ff9ca6fuffa2ff06607u6u7bu6uufu1ufuu3uf126uuu6uu63uuuuuu7306uu1uu010u0e0uuuu0u6uuu
+fef367f67ucff7ff3fffff76uf6f00666113ffef6661601ufffb60f3fffff666ff0660660fff6fffc6eaffff600f606f6ff6u6f6fufff0666ffffuffuff8ufuu600010uuuf6011uu1e06uuu6u0f266uu7u66c010f06f6f6ff9ca6fuffa2ff06607u6u7bu6uufu1ufuu3uf126uuu6uu63uuuuuu7306uu1uu010u0e0uuuu0u6uuu
+Epoch 5
+iter 400
+disc cost 3.7333916225179564e-07, real prob 1.0
+gen cost 23.679203033447266, gen prob 3.4055221931339474e-07
+blstm_cost 0.20062626898288727
+w-distance 63.18545913696289
+time0:08:13.553214
+
+
+
+
+############################################################################################################
+       seqsize为64的成功！！！！！！！！！！！！！！！！！！！！！
+       生成器最后一层不要使用归一化,
+       针对seq_size为256的，生成器倒数第二层也不要使用归一化

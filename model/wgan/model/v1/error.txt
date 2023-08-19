@@ -1,0 +1,26 @@
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "main.py", line 123, in <module>
+    main()
+  File "main.py", line 114, in main
+    gan.train(data)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/wgan/model/v1/wgan.py", line 235, in train
+    lib._params.clear()
+NameError: name 'lib' is not defined
+Generator/Generator.InputLinear.Linear/kernel:0
+Generator/Generator.InputLinear.Linear/bias:0
+Generator/Generator.hidden_layer_0.Linear/kernel:0
+Generator/Generator.hidden_layer_0.Linear/bias:0
+Generator/Generator.hidden_layer_1.Linear/kernel:0
+Generator/Generator.hidden_layer_1.Linear/bias:0
+Generator/Generator.hidden_layer_2.Linear/kernel:0
+Generator/Generator.hidden_layer_2.Linear/bias:0
+Generator/Generator.output/kernel:0
+Generator/Generator.output/bias:0
+discriminator/discriminator.InputLinear.Linear/kernel:0
+discriminator/discriminator.InputLinear.Linear/bias:0
+discriminator/discriminator.hidden_layer_1.Linear/kernel:0
+discriminator/discriminator.hidden_layer_1.Linear/bias:0
+discriminator/discriminator.output/kernel:0
+discriminator/discriminator.output/bias:0
+

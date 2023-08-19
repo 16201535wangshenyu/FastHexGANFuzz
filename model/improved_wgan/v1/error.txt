@@ -1,0 +1,234 @@
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "main.py", line 144, in <module>
+    main()
+  File "main.py", line 125, in main
+    gan = SA_GAN_SEQ(sess, args, w2i, i2w)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/improved_wgan/v1/improved_wgan.py", line 79, in __init__
+    self.real_logits = self.discriminator(self.real_inputs)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/improved_wgan/v1/improved_wgan.py", line 203, in discriminator
+    output)  # (batch_size, d_model, seq_size)
+  File "/home/shenyuwang/paper_fuzzing/workspace/tflib/ops/conv1d.py", line 98, in Conv1D
+    data_format='NHWC'
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py", line 519, in new_func
+    return func(*args, **kwargs)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py", line 519, in new_func
+    return func(*args, **kwargs)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/ops/nn_ops.py", line 2465, in conv1d
+    with ops.name_scope(name, "conv1d", [value, filters]) as name:
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 5770, in __enter__
+    g = _get_graph_from_inputs(self._values)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 5428, in _get_graph_from_inputs
+    _assert_same_graph(original_graph_element, graph_element)
+  File "/home/shenyuwang/miniconda3/envs/env_3.6/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 5364, in _assert_same_graph
+    original_item))
+ValueError: Tensor("discriminator/Conv1d.1/Conv1d.1.Filters:0", shape=(1, 17, 80), dtype=float32_ref) must be from the same graph as Tensor("discriminator/Conv1d.1/transpose:0", shape=(64, 74, 17), dtype=float32).
+Generator/dense/kernel:0
+Generator/dense/bias:0
+Generator/num_blocks_0/multihead_attention/dense/kernel:0
+Generator/num_blocks_0/multihead_attention/dense/bias:0
+Generator/num_blocks_0/multihead_attention/dense_1/kernel:0
+Generator/num_blocks_0/multihead_attention/dense_1/bias:0
+Generator/num_blocks_0/multihead_attention/dense_2/kernel:0
+Generator/num_blocks_0/multihead_attention/dense_2/bias:0
+Generator/num_blocks_0/multihead_attention/ln/beta:0
+Generator/num_blocks_0/multihead_attention/ln/gamma:0
+Generator/num_blocks_0/positionwise_feedforward/dense/kernel:0
+Generator/num_blocks_0/positionwise_feedforward/dense/bias:0
+Generator/num_blocks_0/positionwise_feedforward/dense_1/kernel:0
+Generator/num_blocks_0/positionwise_feedforward/dense_1/bias:0
+Generator/num_blocks_0/positionwise_feedforward/ln/beta:0
+Generator/num_blocks_0/positionwise_feedforward/ln/gamma:0
+Generator/num_blocks_1/multihead_attention/dense/kernel:0
+Generator/num_blocks_1/multihead_attention/dense/bias:0
+Generator/num_blocks_1/multihead_attention/dense_1/kernel:0
+Generator/num_blocks_1/multihead_attention/dense_1/bias:0
+Generator/num_blocks_1/multihead_attention/dense_2/kernel:0
+Generator/num_blocks_1/multihead_attention/dense_2/bias:0
+Generator/num_blocks_1/multihead_attention/ln/beta:0
+Generator/num_blocks_1/multihead_attention/ln/gamma:0
+Generator/num_blocks_1/positionwise_feedforward/dense/kernel:0
+Generator/num_blocks_1/positionwise_feedforward/dense/bias:0
+Generator/num_blocks_1/positionwise_feedforward/dense_1/kernel:0
+Generator/num_blocks_1/positionwise_feedforward/dense_1/bias:0
+Generator/num_blocks_1/positionwise_feedforward/ln/beta:0
+Generator/num_blocks_1/positionwise_feedforward/ln/gamma:0
+Generator/num_blocks_2/multihead_attention/dense/kernel:0
+Generator/num_blocks_2/multihead_attention/dense/bias:0
+Generator/num_blocks_2/multihead_attention/dense_1/kernel:0
+Generator/num_blocks_2/multihead_attention/dense_1/bias:0
+Generator/num_blocks_2/multihead_attention/dense_2/kernel:0
+Generator/num_blocks_2/multihead_attention/dense_2/bias:0
+Generator/num_blocks_2/multihead_attention/ln/beta:0
+Generator/num_blocks_2/multihead_attention/ln/gamma:0
+Generator/num_blocks_2/positionwise_feedforward/dense/kernel:0
+Generator/num_blocks_2/positionwise_feedforward/dense/bias:0
+Generator/num_blocks_2/positionwise_feedforward/dense_1/kernel:0
+Generator/num_blocks_2/positionwise_feedforward/dense_1/bias:0
+Generator/num_blocks_2/positionwise_feedforward/ln/beta:0
+Generator/num_blocks_2/positionwise_feedforward/ln/gamma:0
+Generator/num_blocks_3/multihead_attention/dense/kernel:0
+Generator/num_blocks_3/multihead_attention/dense/bias:0
+Generator/num_blocks_3/multihead_attention/dense_1/kernel:0
+Generator/num_blocks_3/multihead_attention/dense_1/bias:0
+Generator/num_blocks_3/multihead_attention/dense_2/kernel:0
+Generator/num_blocks_3/multihead_attention/dense_2/bias:0
+Generator/num_blocks_3/multihead_attention/ln/beta:0
+Generator/num_blocks_3/multihead_attention/ln/gamma:0
+Generator/num_blocks_3/positionwise_feedforward/dense/kernel:0
+Generator/num_blocks_3/positionwise_feedforward/dense/bias:0
+Generator/num_blocks_3/positionwise_feedforward/dense_1/kernel:0
+Generator/num_blocks_3/positionwise_feedforward/dense_1/bias:0
+Generator/num_blocks_3/positionwise_feedforward/ln/beta:0
+Generator/num_blocks_3/positionwise_feedforward/ln/gamma:0
+Generator/weights:0
+
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "main.py", line 145, in <module>
+    main()
+  File "main.py", line 138, in main
+    print("DONE. Time:", timedelta(seconds=time.time()-train_start_time))
+NameError: name 'train_start_time' is not defined
+Generator/dense/kernel:0
+Generator/dense/bias:0
+Generator/num_blocks_0/multihead_attention/dense/kernel:0
+Generator/num_blocks_0/multihead_attention/dense/bias:0
+Generator/num_blocks_0/multihead_attention/dense_1/kernel:0
+Generator/num_blocks_0/multihead_attention/dense_1/bias:0
+Generator/num_blocks_0/multihead_attention/dense_2/kernel:0
+Generator/num_blocks_0/multihead_attention/dense_2/bias:0
+Generator/num_blocks_0/multihead_attention/ln/beta:0
+Generator/num_blocks_0/multihead_attention/ln/gamma:0
+Generator/num_blocks_0/positionwise_feedforward/dense/kernel:0
+Generator/num_blocks_0/positionwise_feedforward/dense/bias:0
+Generator/num_blocks_0/positionwise_feedforward/dense_1/kernel:0
+Generator/num_blocks_0/positionwise_feedforward/dense_1/bias:0
+Generator/num_blocks_0/positionwise_feedforward/ln/beta:0
+Generator/num_blocks_0/positionwise_feedforward/ln/gamma:0
+Generator/num_blocks_1/multihead_attention/dense/kernel:0
+Generator/num_blocks_1/multihead_attention/dense/bias:0
+Generator/num_blocks_1/multihead_attention/dense_1/kernel:0
+Generator/num_blocks_1/multihead_attention/dense_1/bias:0
+Generator/num_blocks_1/multihead_attention/dense_2/kernel:0
+Generator/num_blocks_1/multihead_attention/dense_2/bias:0
+Generator/num_blocks_1/multihead_attention/ln/beta:0
+Generator/num_blocks_1/multihead_attention/ln/gamma:0
+Generator/num_blocks_1/positionwise_feedforward/dense/kernel:0
+Generator/num_blocks_1/positionwise_feedforward/dense/bias:0
+Generator/num_blocks_1/positionwise_feedforward/dense_1/kernel:0
+Generator/num_blocks_1/positionwise_feedforward/dense_1/bias:0
+Generator/num_blocks_1/positionwise_feedforward/ln/beta:0
+Generator/num_blocks_1/positionwise_feedforward/ln/gamma:0
+Generator/num_blocks_2/multihead_attention/dense/kernel:0
+Generator/num_blocks_2/multihead_attention/dense/bias:0
+Generator/num_blocks_2/multihead_attention/dense_1/kernel:0
+Generator/num_blocks_2/multihead_attention/dense_1/bias:0
+Generator/num_blocks_2/multihead_attention/dense_2/kernel:0
+Generator/num_blocks_2/multihead_attention/dense_2/bias:0
+Generator/num_blocks_2/multihead_attention/ln/beta:0
+Generator/num_blocks_2/multihead_attention/ln/gamma:0
+Generator/num_blocks_2/positionwise_feedforward/dense/kernel:0
+Generator/num_blocks_2/positionwise_feedforward/dense/bias:0
+Generator/num_blocks_2/positionwise_feedforward/dense_1/kernel:0
+Generator/num_blocks_2/positionwise_feedforward/dense_1/bias:0
+Generator/num_blocks_2/positionwise_feedforward/ln/beta:0
+Generator/num_blocks_2/positionwise_feedforward/ln/gamma:0
+Generator/num_blocks_3/multihead_attention/dense/kernel:0
+Generator/num_blocks_3/multihead_attention/dense/bias:0
+Generator/num_blocks_3/multihead_attention/dense_1/kernel:0
+Generator/num_blocks_3/multihead_attention/dense_1/bias:0
+Generator/num_blocks_3/multihead_attention/dense_2/kernel:0
+Generator/num_blocks_3/multihead_attention/dense_2/bias:0
+Generator/num_blocks_3/multihead_attention/ln/beta:0
+Generator/num_blocks_3/multihead_attention/ln/gamma:0
+Generator/num_blocks_3/positionwise_feedforward/dense/kernel:0
+Generator/num_blocks_3/positionwise_feedforward/dense/bias:0
+Generator/num_blocks_3/positionwise_feedforward/dense_1/kernel:0
+Generator/num_blocks_3/positionwise_feedforward/dense_1/bias:0
+Generator/num_blocks_3/positionwise_feedforward/ln/beta:0
+Generator/num_blocks_3/positionwise_feedforward/ln/gamma:0
+Generator/weights:0
+discriminator/Conv1d.1/Conv1d.1.Filters:0
+discriminator/Conv1d.1/Conv1d.1.Biases:0
+discriminator/Conv1d.2/Conv1d.2.Filters:0
+discriminator/Conv1d.2/Conv1d.2.Biases:0
+discriminator/Conv1d.3/Conv1d.3.Filters:0
+discriminator/Conv1d.3/Conv1d.3.Biases:0
+discriminator/Conv1d.4/Conv1d.4.Filters:0
+discriminator/Conv1d.4/Conv1d.4.Biases:0
+discriminator/Conv1d.5/Conv1d.5.Filters:0
+discriminator/Conv1d.5/Conv1d.5.Biases:0
+discriminator/multihead_attention_1/dense/kernel:0
+discriminator/multihead_attention_1/dense/bias:0
+discriminator/multihead_attention_1/dense_1/kernel:0
+discriminator/multihead_attention_1/dense_1/bias:0
+discriminator/multihead_attention_1/dense_2/kernel:0
+discriminator/multihead_attention_1/dense_2/bias:0
+discriminator/multihead_attention_1/ln/beta:0
+discriminator/multihead_attention_1/ln/gamma:0
+discriminator/multihead_attention_2/dense/kernel:0
+discriminator/multihead_attention_2/dense/bias:0
+discriminator/multihead_attention_2/dense_1/kernel:0
+discriminator/multihead_attention_2/dense_1/bias:0
+discriminator/multihead_attention_2/dense_2/kernel:0
+discriminator/multihead_attention_2/dense_2/bias:0
+discriminator/multihead_attention_2/ln/beta:0
+discriminator/multihead_attention_2/ln/gamma:0
+discriminator/dense/kernel:0
+discriminator/dense/bias:0
+
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "main.py", line 145, in <module>
+    main()
+  File "main.py", line 125, in main
+    gan = SA_GAN_SEQ(sess, args, w2i, i2w)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/improved_wgan/v1/improved_wgan.py", line 34, in __init__
+    os.mkdir(self.outputdir)
+FileNotFoundError: [Errno 2] 没有那个文件或目录: '/home/shenyuwang/paper_fuzzing/workspace/output/mqtt/Fast_RopEGAN/test20230514_02_58_52_mqtt_48_50_52_54_6w'
+
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "main.py", line 145, in <module>
+    main()
+  File "main.py", line 125, in main
+    gan = SA_GAN_SEQ(sess, args, w2i, i2w)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/improved_wgan/v1/improved_wgan.py", line 34, in __init__
+    os.mkdir(self.outputdir)
+FileNotFoundError: [Errno 2] 没有那个文件或目录: '/home/shenyuwang/paper_fuzzing/workspace/output/mqtt/Fast_RopEGAN/test20230514_10_37_48_mqtt_48_50_52_54_6w'
+
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "main.py", line 147, in <module>
+    main()
+  File "main.py", line 127, in main
+    gan = SA_GAN_SEQ(sess, args, w2i, i2w)
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/improved_wgan/v1/improved_wgan.py", line 73, in __init__
+    self.fake_inputs = self.generator(self.z)  # shape (batch_size, seq_size, vocab_size), there is probablity
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/improved_wgan/v1/improved_wgan.py", line 181, in generator
+    x = ff(x, num_units=[self.d_ff, self.d_model])
+  File "/home/shenyuwang/paper_fuzzing/workspace/model/improved_wgan/v1/ops.py", line 366, in ff
+    outputs = ln(outputs)
+UnboundLocalError: local variable 'outputs' referenced before assignment
+Generator/dense/kernel:0
+Generator/dense/bias:0
+Generator/num_blocks_0/multihead_attention/ln/beta:0
+Generator/num_blocks_0/multihead_attention/ln/gamma:0
+Generator/num_blocks_0/multihead_attention/dense/kernel:0
+Generator/num_blocks_0/multihead_attention/dense/bias:0
+Generator/num_blocks_0/multihead_attention/dense_1/kernel:0
+Generator/num_blocks_0/multihead_attention/dense_1/bias:0
+Generator/num_blocks_0/multihead_attention/dense_2/kernel:0
+Generator/num_blocks_0/multihead_attention/dense_2/bias:0
+
+#######################################################本次运行报错信息如下：#######################################################
+Traceback (most recent call last):
+  File "main.py", line 147, in <module>
+    main()
+  File "main.py", line 111, in main
+    args_set = init_args_set(data_set_list, output_dir_root)
+  File "main.py", line 82, in init_args_set
+    seq_size = int(file.split('_')[-2])
+ValueError: invalid literal for int() with base 10: '6.0w'
+
